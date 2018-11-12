@@ -1,0 +1,1638 @@
+<SETUP>
+<TASK_PORTFOLIO_CODE code="ADD DEBT SETTLEMENT" object_def="&lt;NLSObjectDef&gt;
+&lt;TaskHeader&gt;
+&lt;Field Name=&quot;Workflow&quot; Label=&quot;Workflow&quot; StaticLeftPos=&quot;58&quot; StaticTopPos=&quot;159&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;218&quot; FieldTopPos=&quot;159&quot; FieldWidth=&quot;1207&quot; FieldHeight=&quot;60&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;1&quot; ZOrder=&quot;1&quot;/&gt;
+&lt;Field Name=&quot;Branch&quot; Label=&quot;Branch&quot; StaticLeftPos=&quot;994&quot; StaticTopPos=&quot;135&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;1154&quot; FieldTopPos=&quot;135&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;1&quot; ZOrder=&quot;2&quot;/&gt;
+&lt;Field Name=&quot;Sort By&quot; Label=&quot;Sort By&quot; StaticLeftPos=&quot;994&quot; StaticTopPos=&quot;135&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;1154&quot; FieldTopPos=&quot;135&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;0&quot; ZOrder=&quot;3&quot;/&gt;
+&lt;Field Name=&quot;Subject&quot; Label=&quot;Subject&quot; StaticLeftPos=&quot;58&quot; StaticTopPos=&quot;135&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;218&quot; FieldTopPos=&quot;135&quot; FieldWidth=&quot;736&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;0&quot; ZOrder=&quot;4&quot;/&gt;
+&lt;Field Name=&quot;Completed&quot; Label=&quot;Settlement Completed&quot; StaticLeftPos=&quot;994&quot; StaticTopPos=&quot;111&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;1154&quot; FieldTopPos=&quot;111&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;0&quot; ZOrder=&quot;5&quot;/&gt;
+&lt;Field Name=&quot;Owner&quot; Label=&quot;Owner&quot; StaticLeftPos=&quot;526&quot; StaticTopPos=&quot;111&quot; StaticWidth=&quot;154&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;685&quot; FieldTopPos=&quot;111&quot; FieldWidth=&quot;273&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;1&quot; IsHidden=&quot;0&quot; ZOrder=&quot;6&quot;/&gt;
+&lt;Field Name=&quot;% Complete&quot; Label=&quot;% Complete&quot; StaticLeftPos=&quot;58&quot; StaticTopPos=&quot;111&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;218&quot; FieldTopPos=&quot;111&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;1&quot; ZOrder=&quot;7&quot;/&gt;
+&lt;Field Name=&quot;Due Date&quot; Label=&quot;Request Expire Date&quot; StaticLeftPos=&quot;995&quot; StaticTopPos=&quot;62&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;1154&quot; FieldTopPos=&quot;62&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;1&quot; IsHidden=&quot;0&quot; ZOrder=&quot;8&quot;/&gt;
+&lt;Field Name=&quot;Created By&quot; Label=&quot;Created By&quot; StaticLeftPos=&quot;526&quot; StaticTopPos=&quot;87&quot; StaticWidth=&quot;154&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;685&quot; FieldTopPos=&quot;87&quot; FieldWidth=&quot;273&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;0&quot; ZOrder=&quot;9&quot;/&gt;
+&lt;Field Name=&quot;Work Queue&quot; Label=&quot;Work Queue&quot; StaticLeftPos=&quot;58&quot; StaticTopPos=&quot;87&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;218&quot; FieldTopPos=&quot;87&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;0&quot; ZOrder=&quot;10&quot;/&gt;
+&lt;Field Name=&quot;Start Date&quot; Label=&quot;Acitve Settlement Start Date&quot; StaticLeftPos=&quot;994&quot; StaticTopPos=&quot;86&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;1154&quot; FieldTopPos=&quot;86&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;1&quot; IsHidden=&quot;0&quot; ZOrder=&quot;11&quot;/&gt;
+&lt;Field Name=&quot;Refno&quot; Label=&quot;Loan Refno&quot; StaticLeftPos=&quot;526&quot; StaticTopPos=&quot;63&quot; StaticWidth=&quot;154&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;685&quot; FieldTopPos=&quot;63&quot; FieldWidth=&quot;273&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;1&quot; IsHidden=&quot;0&quot; ZOrder=&quot;12&quot;/&gt;
+&lt;Field Name=&quot;Priority&quot; Label=&quot;Priority&quot; StaticLeftPos=&quot;58&quot; StaticTopPos=&quot;63&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;218&quot; FieldTopPos=&quot;63&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;0&quot; ZOrder=&quot;13&quot;/&gt;
+&lt;Field Name=&quot;Created&quot; Label=&quot;Request Date&quot; StaticLeftPos=&quot;994&quot; StaticTopPos=&quot;39&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;1154&quot; FieldTopPos=&quot;39&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;1&quot; IsHidden=&quot;0&quot; ZOrder=&quot;14&quot;/&gt;
+&lt;Field Name=&quot;Task Type&quot; Label=&quot;Task Type&quot; StaticLeftPos=&quot;526&quot; StaticTopPos=&quot;39&quot; StaticWidth=&quot;154&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;685&quot; FieldTopPos=&quot;39&quot; FieldWidth=&quot;273&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;1&quot; ZOrder=&quot;15&quot;/&gt;
+&lt;Field Name=&quot;Work Packet#&quot; Label=&quot;Work Packet#&quot; StaticLeftPos=&quot;58&quot; StaticTopPos=&quot;39&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;218&quot; FieldTopPos=&quot;39&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;1&quot; ZOrder=&quot;16&quot;/&gt;
+&lt;Field Name=&quot;Status&quot; Label=&quot;Status&quot; StaticLeftPos=&quot;994&quot; StaticTopPos=&quot;15&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;1154&quot; FieldTopPos=&quot;15&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;0&quot; IsHidden=&quot;0&quot; ZOrder=&quot;17&quot;/&gt;
+&lt;Field Name=&quot;Template&quot; Label=&quot;Template&quot; StaticLeftPos=&quot;526&quot; StaticTopPos=&quot;15&quot; StaticWidth=&quot;154&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;685&quot; FieldTopPos=&quot;15&quot; FieldWidth=&quot;273&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;1&quot; IsHidden=&quot;0&quot; ZOrder=&quot;18&quot;/&gt;
+&lt;Field Name=&quot;Task Ref#&quot; Label=&quot;Task Refno&quot; StaticLeftPos=&quot;58&quot; StaticTopPos=&quot;15&quot; StaticWidth=&quot;155&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;218&quot; FieldTopPos=&quot;15&quot; FieldWidth=&quot;271&quot; FieldHeight=&quot;20&quot; ReadOnly=&quot;1&quot; IsHidden=&quot;0&quot; ZOrder=&quot;19&quot;/&gt;
+&lt;/TaskHeader&gt;
+&lt;ScreenObject/&gt;
+&lt;/NLSObjectDef&gt;
+" task_template_description="" template_type="8" subject="Debt Settlement" notes="" field_order="6" default_owner_uid="-1" initial_tab_selection="2" option_flags="31" priority_code="NORMAL" work_queue_code="REQUESTS" status_code="CREATE REQUEST" tmr_template="" workflow="">
+<STATUSLINKS>
+<STATUSLINK status_code="CREATE REQUEST" field_order="0"/>
+<STATUSLINK status_code="SUBMIT FOR APPROVAL" field_order="1"/>
+<STATUSLINK status_code="PAUSED" field_order="5"/>
+<STATUSLINK status_code="DENIED" field_order="4"/>
+<STATUSLINK status_code="APPROVAL PENDING" field_order="2"/>
+<STATUSLINK status_code="LOAN IN ACTIVE SETTLEMENT" field_order="6"/>
+<STATUSLINK status_code="APPROVED" field_order="3"/>
+</STATUSLINKS>
+<PRIORITYLINKS>
+<PRIORITYLINK priority_code="NORMAL" field_order="0"/>
+</PRIORITYLINKS>
+<USERDEFFIELDS field_id="5501" field_type="8" field_attribute="0" label_text="Settlement Offer Schedule" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;426&quot; StaticTopPos=&quot;9&quot; StaticWidth=&quot;177&quot; StaticHeight=&quot;22&quot; FieldLeftPos=&quot;426&quot; FieldTopPos=&quot;32&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;420&quot; TabOrder=&quot;17&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;1&quot; ReadOnly=&quot;0&quot;&gt;
+&lt;TABLE DoNotSave=&quot;False&quot; DoNotDirty=&quot;False&quot; StretchLastColumn=&quot;True&quot; GridType=&quot;Generic&quot;/&gt;
+&lt;ROW NumberOfRows=&quot;Grow as needed&quot;/&gt;
+&lt;COLUMN Name=&quot;Month&quot; TableLink=&quot;None&quot; Type=&quot;Text&quot; DecimalPlaces=&quot;0&quot; ComboData=&quot;&quot; Alignment=&quot;Left&quot; Width=&quot;100&quot; ReadOnly=&quot;False&quot; UseComma=&quot;False&quot; SubTotal=&quot;False&quot; SQLStatement=&quot;&quot;/&gt;
+&lt;COLUMN Name=&quot;Amount&quot; TableLink=&quot;None&quot; Type=&quot;Number&quot; DecimalPlaces=&quot;2&quot; ComboData=&quot;&quot; Alignment=&quot;Right&quot; Width=&quot;75&quot; ReadOnly=&quot;False&quot; UseComma=&quot;True&quot; SubTotal=&quot;False&quot; SQLStatement=&quot;&quot;/&gt;
+&lt;/UDF&gt;
+" StaticLeftPos="426.0000000000" StaticTopPos="9.0000000000" StaticWidth="177.0000000000" StaticHeight="22.0000000000" FieldLeftPos="426.0000000000" FieldTopPos="32.0000000000" FieldWidth="263.0000000000" FieldHeight="420.0000000000" TabOrder="17" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="1"/>
+<USERDEFFIELDS field_id="1006" field_type="0" field_attribute="4" label_text="Offer Summary" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="Need Info" script_type="0" option_flags="1" script="**###BEFORE_INPUT###****###BEFORE_INPUT###****###AFTER_INPUT###****###AFTER_INPUT###****###WHEN_FIELD_CHANGE###****###WHEN_FIELD_CHANGE###****###BUTTON_CLICKED###****###BUTTON_CLICKED###****###ON_FIELD_REFRESH###****###ON_FIELD_REFRESH###****###ON_INITIALIZE###****###ON_INITIALIZE###**" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;89&quot; StaticWidth=&quot;107&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;91&quot; FieldWidth=&quot;259&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;7&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;3&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="89.0000000000" StaticWidth="107.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="91.0000000000" FieldWidth="259.0000000000" FieldHeight="20.0000000000" TabOrder="7" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="3"/>
+<USERDEFFIELDS field_id="5510" field_type="8" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;0&quot; FieldTopPos=&quot;0&quot; FieldWidth=&quot;87&quot; FieldHeight=&quot;25&quot; TabOrder=&quot;8&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;5&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="0.0000000000" FieldTopPos="0.0000000000" FieldWidth="87.0000000000" FieldHeight="25.0000000000" TabOrder="8" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="5"/>
+<USERDEFFIELDS field_id="5509" field_type="8" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;0&quot; FieldTopPos=&quot;0&quot; FieldWidth=&quot;87&quot; FieldHeight=&quot;25&quot; TabOrder=&quot;9&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;7&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="0.0000000000" FieldTopPos="0.0000000000" FieldWidth="87.0000000000" FieldHeight="25.0000000000" TabOrder="9" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="7"/>
+<USERDEFFIELDS field_id="5508" field_type="8" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;0&quot; FieldTopPos=&quot;0&quot; FieldWidth=&quot;87&quot; FieldHeight=&quot;25&quot; TabOrder=&quot;10&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;9&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="0.0000000000" FieldTopPos="0.0000000000" FieldWidth="87.0000000000" FieldHeight="25.0000000000" TabOrder="10" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="9"/>
+<USERDEFFIELDS field_id="5507" field_type="8" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;0&quot; FieldTopPos=&quot;0&quot; FieldWidth=&quot;87&quot; FieldHeight=&quot;25&quot; TabOrder=&quot;11&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;11&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="0.0000000000" FieldTopPos="0.0000000000" FieldWidth="87.0000000000" FieldHeight="25.0000000000" TabOrder="11" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="11"/>
+<USERDEFFIELDS field_id="5506" field_type="8" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;0&quot; FieldTopPos=&quot;0&quot; FieldWidth=&quot;87&quot; FieldHeight=&quot;25&quot; TabOrder=&quot;12&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;13&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="0.0000000000" FieldTopPos="0.0000000000" FieldWidth="87.0000000000" FieldHeight="25.0000000000" TabOrder="12" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="13"/>
+<USERDEFFIELDS field_id="5505" field_type="8" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;0&quot; FieldTopPos=&quot;0&quot; FieldWidth=&quot;87&quot; FieldHeight=&quot;25&quot; TabOrder=&quot;13&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;15&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="0.0000000000" FieldTopPos="0.0000000000" FieldWidth="87.0000000000" FieldHeight="25.0000000000" TabOrder="13" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="15"/>
+<USERDEFFIELDS field_id="5504" field_type="8" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;0&quot; FieldTopPos=&quot;0&quot; FieldWidth=&quot;87&quot; FieldHeight=&quot;25&quot; TabOrder=&quot;14&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;17&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="0.0000000000" FieldTopPos="0.0000000000" FieldWidth="87.0000000000" FieldHeight="25.0000000000" TabOrder="14" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="17"/>
+<USERDEFFIELDS field_id="5503" field_type="8" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;0&quot; FieldTopPos=&quot;0&quot; FieldWidth=&quot;87&quot; FieldHeight=&quot;25&quot; TabOrder=&quot;15&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;19&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="0.0000000000" FieldTopPos="0.0000000000" FieldWidth="87.0000000000" FieldHeight="25.0000000000" TabOrder="15" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="19"/>
+<USERDEFFIELDS field_id="5502" field_type="8" field_attribute="3" label_text="Payment builder" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;973&quot; StaticWidth=&quot;158&quot; StaticHeight=&quot;25&quot; FieldLeftPos=&quot;891&quot; FieldTopPos=&quot;43&quot; FieldWidth=&quot;227&quot; FieldHeight=&quot;135&quot; TabOrder=&quot;16&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;21&quot; ReadOnly=&quot;0&quot;&gt;
+&lt;TABLE DoNotSave=&quot;False&quot; DoNotDirty=&quot;False&quot; StretchLastColumn=&quot;False&quot; GridType=&quot;Generic&quot;/&gt;
+&lt;ROW NumberOfRows=&quot;Grow as needed&quot;/&gt;
+&lt;COLUMN Name=&quot;Amount&quot; TableLink=&quot;None&quot; Type=&quot;Number&quot; DecimalPlaces=&quot;2&quot; ComboData=&quot;&quot; Alignment=&quot;Left&quot; Width=&quot;75&quot; ReadOnly=&quot;True&quot; UseComma=&quot;False&quot; SubTotal=&quot;False&quot; SQLStatement=&quot;&quot;/&gt;
+&lt;COLUMN Name=&quot;Times&quot; TableLink=&quot;None&quot; Type=&quot;Number&quot; DecimalPlaces=&quot;0&quot; ComboData=&quot;&quot; Alignment=&quot;Left&quot; Width=&quot;75&quot; ReadOnly=&quot;True&quot; UseComma=&quot;False&quot; SubTotal=&quot;False&quot; SQLStatement=&quot;&quot;/&gt;
+&lt;COLUMN Name=&quot;1stMonth&quot; TableLink=&quot;None&quot; Type=&quot;Text&quot; DecimalPlaces=&quot;0&quot; ComboData=&quot;&quot; Alignment=&quot;Left&quot; Width=&quot;150&quot; ReadOnly=&quot;False&quot; UseComma=&quot;False&quot; SubTotal=&quot;False&quot; SQLStatement=&quot;&quot;/&gt;
+&lt;/UDF&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="973.0000000000" StaticWidth="158.0000000000" StaticHeight="25.0000000000" FieldLeftPos="891.0000000000" FieldTopPos="43.0000000000" FieldWidth="227.0000000000" FieldHeight="135.0000000000" TabOrder="16" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="21"/>
+<USERDEFFIELDS field_id="3050" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;684&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;684&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;18&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;23&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="684.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="684.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="18" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="23"/>
+<USERDEFFIELDS field_id="3049" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;662&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;662&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;19&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;25&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="662.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="662.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="19" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="25"/>
+<USERDEFFIELDS field_id="3048" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;640&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;640&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;20&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;27&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="640.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="640.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="20" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="27"/>
+<USERDEFFIELDS field_id="3047" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;618&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;618&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;21&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;29&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="618.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="618.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="21" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="29"/>
+<USERDEFFIELDS field_id="3046" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;596&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;596&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;22&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;31&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="596.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="596.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="22" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="31"/>
+<USERDEFFIELDS field_id="3045" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;574&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;574&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;23&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;33&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="574.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="574.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="23" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="33"/>
+<USERDEFFIELDS field_id="3044" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;552&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;552&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;24&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;35&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="552.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="552.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="24" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="35"/>
+<USERDEFFIELDS field_id="3043" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;530&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;530&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;25&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;37&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="530.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="530.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="25" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="37"/>
+<USERDEFFIELDS field_id="3042" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;508&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;508&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;26&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;39&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="508.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="508.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="26" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="39"/>
+<USERDEFFIELDS field_id="3041" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;486&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;486&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;27&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;41&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="486.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="486.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="27" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="41"/>
+<USERDEFFIELDS field_id="3040" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;464&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;464&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;28&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;43&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="464.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="464.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="28" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="43"/>
+<USERDEFFIELDS field_id="3039" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;783&quot; StaticTopPos=&quot;442&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;442&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;29&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;45&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="783.0000000000" StaticTopPos="442.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="442.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="29" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="45"/>
+<USERDEFFIELDS field_id="3038" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;420&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;420&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;30&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;47&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="420.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="420.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="30" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="47"/>
+<USERDEFFIELDS field_id="3037" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;398&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;398&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;31&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;49&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="398.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="398.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="31" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="49"/>
+<USERDEFFIELDS field_id="3036" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;376&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;376&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;32&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;51&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="376.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="376.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="32" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="51"/>
+<USERDEFFIELDS field_id="3035" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;354&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;354&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;33&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;53&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="354.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="354.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="33" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="53"/>
+<USERDEFFIELDS field_id="3034" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;332&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;332&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;34&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;55&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="332.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="332.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="34" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="55"/>
+<USERDEFFIELDS field_id="3033" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;310&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;310&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;35&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;57&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="310.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="310.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="35" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="57"/>
+<USERDEFFIELDS field_id="3032" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;288&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;288&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;36&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;59&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="288.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="288.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="36" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="59"/>
+<USERDEFFIELDS field_id="3031" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;266&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;266&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;37&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;61&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="266.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="266.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="37" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="61"/>
+<USERDEFFIELDS field_id="3030" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;244&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;244&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;38&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;63&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="244.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="244.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="38" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="63"/>
+<USERDEFFIELDS field_id="3029" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;222&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;222&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;39&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;65&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="222.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="222.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="39" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="65"/>
+<USERDEFFIELDS field_id="3028" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;200&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;200&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;40&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;67&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="200.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="200.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="40" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="67"/>
+<USERDEFFIELDS field_id="3027" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;178&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;178&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;41&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;69&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="178.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="178.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="41" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="69"/>
+<USERDEFFIELDS field_id="3026" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;156&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;156&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;42&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;71&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="156.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="156.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="42" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="71"/>
+<USERDEFFIELDS field_id="3025" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;134&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;134&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;43&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;73&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="134.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="134.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="43" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="73"/>
+<USERDEFFIELDS field_id="3024" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;112&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;112&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;44&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;75&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="112.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="112.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="44" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="75"/>
+<USERDEFFIELDS field_id="3023" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;90&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;90&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;45&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;77&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="90.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="90.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="45" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="77"/>
+<USERDEFFIELDS field_id="3022" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;68&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;68&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;46&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;79&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="68.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="68.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="46" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="79"/>
+<USERDEFFIELDS field_id="3021" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;46&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;46&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;47&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;81&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="46.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="46.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="47" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="81"/>
+<USERDEFFIELDS field_id="3020" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;24&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;24&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;48&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;83&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="24.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="24.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="48" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="83"/>
+<USERDEFFIELDS field_id="3019" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;1048&quot; StaticTopPos=&quot;2&quot; StaticWidth=&quot;111&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;899&quot; FieldTopPos=&quot;2&quot; FieldWidth=&quot;257&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;49&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;85&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="1,048.0000000000" StaticTopPos="2.0000000000" StaticWidth="111.0000000000" StaticHeight="20.0000000000" FieldLeftPos="899.0000000000" FieldTopPos="2.0000000000" FieldWidth="257.0000000000" FieldHeight="20.0000000000" TabOrder="49" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="85"/>
+<USERDEFFIELDS field_id="3018" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;728&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;728&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;50&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;87&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="728.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="728.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="50" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="87"/>
+<USERDEFFIELDS field_id="3017" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;706&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;706&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;51&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;89&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="706.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="706.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="51" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="89"/>
+<USERDEFFIELDS field_id="3016" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;684&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;684&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;52&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;91&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="684.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="684.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="52" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="91"/>
+<USERDEFFIELDS field_id="3015" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;662&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;662&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;53&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;93&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="662.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="662.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="53" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="93"/>
+<USERDEFFIELDS field_id="3014" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;640&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;640&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;54&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;95&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="640.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="640.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="54" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="95"/>
+<USERDEFFIELDS field_id="3013" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;618&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;618&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;55&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;97&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="618.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="618.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="55" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="97"/>
+<USERDEFFIELDS field_id="3012" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;596&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;596&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;56&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;99&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="596.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="596.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="56" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="99"/>
+<USERDEFFIELDS field_id="3011" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;574&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;574&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;57&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;101&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="574.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="574.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="57" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="101"/>
+<USERDEFFIELDS field_id="3010" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;591&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;552&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;58&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;103&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="591.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="552.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="58" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="103"/>
+<USERDEFFIELDS field_id="3009" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;569&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;530&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;59&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;105&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="569.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="530.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="59" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="105"/>
+<USERDEFFIELDS field_id="3008" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;547&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;508&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;60&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;107&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="547.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="508.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="60" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="107"/>
+<USERDEFFIELDS field_id="3007" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;525&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;486&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;61&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;109&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="525.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="486.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="61" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="109"/>
+<USERDEFFIELDS field_id="3006" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;503&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;464&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;62&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;111&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="503.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="464.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="62" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="111"/>
+<USERDEFFIELDS field_id="3005" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;481&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;509&quot; FieldTopPos=&quot;442&quot; FieldWidth=&quot;263&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;63&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;113&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="481.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="509.0000000000" FieldTopPos="442.0000000000" FieldWidth="263.0000000000" FieldHeight="20.0000000000" TabOrder="63" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="113"/>
+<USERDEFFIELDS field_id="3004" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;405&quot; StaticTopPos=&quot;459&quot; StaticWidth=&quot;102&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;420&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;64&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;115&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="405.0000000000" StaticTopPos="459.0000000000" StaticWidth="102.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="420.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="64" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="115"/>
+<USERDEFFIELDS field_id="3003" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;437&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;398&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;65&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;117&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="437.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="398.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="65" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="117"/>
+<USERDEFFIELDS field_id="3002" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;415&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;376&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;66&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;119&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="415.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="376.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="66" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="119"/>
+<USERDEFFIELDS field_id="3001" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;393&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;354&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;67&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;121&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="393.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="354.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="67" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="121"/>
+<USERDEFFIELDS field_id="1050" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;371&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;332&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;68&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;123&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="371.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="332.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="68" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="123"/>
+<USERDEFFIELDS field_id="1049" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;349&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;310&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;69&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;125&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="349.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="310.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="69" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="125"/>
+<USERDEFFIELDS field_id="1048" field_type="6" field_attribute="3" label_text="" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="**###BEFORE_INPUT###****###BEFORE_INPUT###****###AFTER_INPUT###****###AFTER_INPUT###****###WHEN_FIELD_CHANGE###****###WHEN_FIELD_CHANGE###****###BUTTON_CLICKED###**&lt;BUTTONS ExecScriptOnChange=&quot;0&quot;&gt;
+&lt;BUTTON Name=&quot;Create Schedule&quot; Script=&quot;taskrefno = NLSApp.GetField(&amp;quot;TASK_REFNO&amp;quot;)
+
+NLSApp.SaveScreen()
+
+addofferTASK()
+NLSApp.SaveScreen()
+NLSApp.RefreshScreen()
+
+addoffersummaryandpercent()
+NLSApp.SaveScreen()
+
+
+
+Sub addofferTASK()
+    currbal = NLSApp.GetField(&amp;quot;TASK_DETAIL_UDF5&amp;quot;)
+    monthtseqtxt = &amp;quot;starting&amp;quot;
+    nextmonthyr = Year(NOW())
+    nextmonth = Monthtext(month(now())) &amp;amp; &amp;quot; &amp;quot; &amp;amp; nextmonthyr
+    rowno = 0
+
+    &amp;apos;**XML set up
+    xxmlheader = &amp;quot;&amp;lt;NLS&amp;gt;&amp;lt;TASK UpdateFlag=&amp;quot;&amp;quot;1&amp;quot;&amp;quot; TaskRefno=&amp;quot;&amp;quot;&amp;quot; &amp;amp; taskrefno &amp;amp; &amp;quot;&amp;quot;&amp;quot; TaskTemplateName=&amp;quot;&amp;quot;ADD DEBT SETTLEMENT&amp;quot;&amp;quot; StatusCodeName=&amp;quot;&amp;quot;CREATE REQUEST&amp;quot;&amp;quot; PriorityCodeName=&amp;quot;&amp;quot;NORMAL&amp;quot;&amp;quot;&amp;gt;&amp;lt;TASKDETAIL TaskDetail101=&amp;quot;&amp;quot;&amp;lt;DATA&amp;gt;&amp;quot;
+    xxmlfooter = &amp;quot;&amp;lt;/DATA&amp;gt;&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/TASK&amp;gt;&amp;lt;/NLS&amp;gt;&amp;quot;
+
+    Do Until firstmonth = &amp;quot;END&amp;quot;
+        &amp;apos;**INPUTS
+        firstmonth = InputBox(&amp;quot;Enter proposed Debt settlement the &amp;quot; &amp;amp; monthtseqtxt &amp;amp; &amp;quot; month.&amp;quot; &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp; &amp;quot;Select CANCEL To quit.&amp;quot; &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp; &amp;quot;Type &amp;apos;END&amp;apos; to complete&amp;quot;, &amp;quot;Settlement Offer Set Up&amp;quot;, nextmonth)
+        &amp;apos;Check for select CANCEL
+        If firstmonth = &amp;quot;&amp;quot; Then
+            Exit Do
+        End If
+
+        &amp;apos;Check for selct END
+        If firstmonth = &amp;quot;END&amp;quot; Or firstmonth = &amp;quot;end&amp;quot; Then
+            Endproc = 1
+        Else
+            Endproc = 0
+        End If
+
+        If Endproc = 1 Then
+            curramount = CStr(totpayments)
+            repeat = 1
+
+        Else
+            curramount = InputBox(&amp;quot;Enter amount For &amp;quot; &amp;amp; firstmonth &amp;amp; &amp;quot;. &amp;quot;, &amp;quot;Settlement Offer Set Up&amp;quot;, &amp;quot;0.00&amp;quot;)
+            repeat = CDbl(InputBox(&amp;quot;How many Times? &amp;quot;, &amp;quot;Settlement Offer Set Up&amp;quot;, &amp;quot;1&amp;quot;))
+
+            &amp;apos;**VARIABLES
+            monthtseqtxt = &amp;quot;Next&amp;quot;
+            nextmonth = firstmonth
+            nextmonthno = MonthNo(firstmonth)
+            nextmonthyr = right(firstmonth, 4)
+            monthstopno = CDbl(nextmonthno) + CDbl(repeat)
+            &amp;apos;msgbox(monthstopno)
+        End If
+
+        &amp;apos;**CREATE SECTION ROWS
+        Do While repeatcnt &amp;lt; repeat
+            repeatcnt = repeatcnt + 1
+
+            If Endproc = 1 Then
+                nextgridrow = &amp;quot;&amp;lt;ROW RowNumber=&amp;apos;&amp;quot; &amp;amp; rowno &amp;amp; &amp;quot;&amp;apos;&amp;gt;&amp;lt;COLUMN Name=&amp;apos;&amp;apos; Value=&amp;apos;&amp;apos;/&amp;gt;&amp;lt;COLUMN Name=&amp;apos;Month&amp;apos; Value=&amp;apos;TOTAL&amp;apos;/&amp;gt;&amp;lt;COLUMN Name=&amp;apos;Amount&amp;apos; Value=&amp;apos;&amp;quot; &amp;amp; totpayments &amp;amp; &amp;quot;&amp;apos;/&amp;gt;&amp;lt;/ROW&amp;gt;&amp;quot;
+            Else
+                nextgridrow = &amp;quot;&amp;lt;ROW RowNumber=&amp;apos;&amp;quot; &amp;amp; rowno &amp;amp; &amp;quot;&amp;apos;&amp;gt;&amp;lt;COLUMN Name=&amp;apos;&amp;apos; Value=&amp;apos;&amp;apos;/&amp;gt;&amp;lt;COLUMN Name=&amp;apos;Month&amp;apos; Value=&amp;apos;&amp;quot; &amp;amp; nextmonth &amp;amp; &amp;quot;&amp;apos;/&amp;gt;&amp;lt;COLUMN Name=&amp;apos;Amount&amp;apos; Value=&amp;apos;&amp;quot; &amp;amp; curramount &amp;amp; &amp;quot;&amp;apos;/&amp;gt;&amp;lt;/ROW&amp;gt;&amp;quot;
+            End If
+
+            allgridrows = allgridrows &amp;amp; nextgridrow
+
+            rowno = rowno + 1
+
+            &amp;apos;Check if next month begins a new year
+            If nextmonthno = &amp;quot;12&amp;quot; Then
+                nextmonthno = &amp;quot;1&amp;quot;
+                nextmonthyr = nextmonthyr + 1
+                nextmonth = &amp;quot;January&amp;quot; &amp;amp; &amp;quot; &amp;quot; &amp;amp; nextmonthyr
+            Else
+                nextmonthno = MonthNo(nextmonth) + 1
+                nextmonth = Monthtext(MonthNo(nextmonth) + 1) &amp;amp; &amp;quot; &amp;quot; &amp;amp; nextmonthyr
+            End If
+            rowcnt = rowcnt + 1
+            totpayments = CDbl(totpayments) + CDbl(curramount)
+
+        Loop
+        repeatcnt = 0
+
+        xxml = xxmlheader &amp;amp; allgridrows &amp;amp; xxmlfooter
+
+        ImportXML(xxml)
+
+        If Endproc = 1 Then
+            NLSApp.SaveScreen()
+            NLSApp.HideFields &amp;quot;TASK_DETAIL_UDF101&amp;quot;, false
+            Exit Do
+        End If
+
+    Loop
+
+
+End Sub
+
+Sub addoffersummaryandpercent()
+    udf101 = NLSApp.GetField(&amp;quot;TASK_DETAIL_UDF101&amp;quot;)
+    udf6 = NLSApp.GetField(&amp;quot;TASK_DETAIL_UDF6&amp;quot;)
+    currbal = NLSApp.GetField(&amp;quot;TASK_DETAIL_UDF5&amp;quot;)
+    offer = GetMonthsFromtaskGrid101(udf101) &amp;amp; &amp;quot; payments for a total of $&amp;quot; &amp;amp; GetTotalFromtaskGrid101(udf101, &amp;quot;Amount&amp;quot;) &amp;amp; &amp;quot;.&amp;quot;
+    TotalOffer = GetTotalFromtaskGrid101(NLSApp.GetField(&amp;quot;TASK_DETAIL_UDF101&amp;quot;), &amp;quot;Amount&amp;quot;)
+
+   If udf05 = &amp;quot;&amp;quot; or  udf05 = 0 Then
+      NLSApp.SetField &amp;quot;TASK_DETAIL_UDF5&amp;quot;, NLSApp.SQLSelectStatement(&amp;quot;Select current_payoff_balance from loanacct where acctrefno = &amp;quot; &amp;amp; NLSApp.GetField (&amp;quot;TASK_NLS_REFNO&amp;quot;))
+      NLSApp.SetField &amp;quot;TASK_DETAIL_UDF8&amp;quot;, NOW()
+   End if
+
+    If len(udf101) &amp;gt; 9 Then
+        If offer &amp;lt;&amp;gt; udf6 Then
+            NLSApp.SetField &amp;quot;TASK_DETAIL_UDF6&amp;quot;, offer
+            NLSApp.SetField &amp;quot;TASK_DETAIL_UDF7&amp;quot;, round(TotalOffer / currbal * 100, 2)
+            &amp;apos;NLSApp.HideFields &amp;quot;TASK_DETAIL_UDF9&amp;quot;, True
+            &amp;apos;NLSApp.HideFields &amp;quot;TASK_DETAIL_UDF11&amp;quot;, False
+        End If
+    End If
+
+End Sub&quot;/&gt;
+&lt;/BUTTONS&gt;
+**###BUTTON_CLICKED###****###ON_FIELD_REFRESH###****###ON_FIELD_REFRESH###****###ON_INITIALIZE###****###ON_INITIALIZE###**" object_def="&lt;UDF StaticLeftPos=&quot;770&quot; StaticTopPos=&quot;384&quot; StaticWidth=&quot;105&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;325&quot; FieldTopPos=&quot;738&quot; FieldWidth=&quot;128&quot; FieldHeight=&quot;30&quot; TabOrder=&quot;70&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;127&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="770.0000000000" StaticTopPos="384.0000000000" StaticWidth="105.0000000000" StaticHeight="20.0000000000" FieldLeftPos="325.0000000000" FieldTopPos="738.0000000000" FieldWidth="128.0000000000" FieldHeight="30.0000000000" TabOrder="70" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="127"/>
+<USERDEFFIELDS field_id="1047" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;305&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;266&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;71&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;129&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="305.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="266.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="71" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="129"/>
+<USERDEFFIELDS field_id="1046" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;283&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;244&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;72&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;131&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="283.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="244.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="72" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="131"/>
+<USERDEFFIELDS field_id="1045" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;261&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;222&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;73&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;133&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="261.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="222.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="73" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="133"/>
+<USERDEFFIELDS field_id="1044" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;239&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;200&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;74&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;135&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="239.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="200.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="74" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="135"/>
+<USERDEFFIELDS field_id="1043" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;217&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;178&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;75&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;137&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="217.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="178.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="75" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="137"/>
+<USERDEFFIELDS field_id="1042" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;195&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;156&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;76&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;139&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="195.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="156.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="76" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="139"/>
+<USERDEFFIELDS field_id="1041" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;173&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;134&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;77&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;141&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="173.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="134.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="77" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="141"/>
+<USERDEFFIELDS field_id="1040" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;151&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;112&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;78&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;143&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="151.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="112.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="78" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="143"/>
+<USERDEFFIELDS field_id="1039" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;129&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;90&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;79&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;145&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="129.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="90.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="79" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="145"/>
+<USERDEFFIELDS field_id="1038" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;107&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;68&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;80&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;147&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="107.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="68.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="80" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="147"/>
+<USERDEFFIELDS field_id="1037" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;46&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;46&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;81&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;149&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="46.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="46.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="81" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="149"/>
+<USERDEFFIELDS field_id="1036" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;24&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;24&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;82&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;151&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="24.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="24.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="82" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="151"/>
+<USERDEFFIELDS field_id="1035" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;672&quot; StaticTopPos=&quot;2&quot; StaticWidth=&quot;101&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;776&quot; FieldTopPos=&quot;2&quot; FieldWidth=&quot;265&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;83&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;153&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="672.0000000000" StaticTopPos="2.0000000000" StaticWidth="101.0000000000" StaticHeight="20.0000000000" FieldLeftPos="776.0000000000" FieldTopPos="2.0000000000" FieldWidth="265.0000000000" FieldHeight="20.0000000000" TabOrder="83" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="153"/>
+<USERDEFFIELDS field_id="1034" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;728&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;728&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;84&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;155&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="728.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="728.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="84" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="155"/>
+<USERDEFFIELDS field_id="1033" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;706&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;706&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;85&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;157&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="706.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="706.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="85" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="157"/>
+<USERDEFFIELDS field_id="1032" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;684&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;684&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;86&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;159&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="684.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="684.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="86" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="159"/>
+<USERDEFFIELDS field_id="1031" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;662&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;662&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;87&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;161&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="662.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="662.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="87" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="161"/>
+<USERDEFFIELDS field_id="1030" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;640&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;640&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;88&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;163&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="640.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="640.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="88" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="163"/>
+<USERDEFFIELDS field_id="1029" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;618&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;618&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;89&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;165&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="618.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="618.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="89" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="165"/>
+<USERDEFFIELDS field_id="1028" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;596&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;596&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;90&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;167&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="596.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="596.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="90" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="167"/>
+<USERDEFFIELDS field_id="1027" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;574&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;574&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;91&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;169&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="574.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="574.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="91" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="169"/>
+<USERDEFFIELDS field_id="1026" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;591&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;591&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;92&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;171&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="591.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="591.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="92" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="171"/>
+<USERDEFFIELDS field_id="1025" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;569&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;569&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;93&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;173&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="569.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="569.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="93" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="173"/>
+<USERDEFFIELDS field_id="1024" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;547&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;547&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;94&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;175&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="547.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="547.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="94" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="175"/>
+<USERDEFFIELDS field_id="1023" field_type="0" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="99,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;525&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;525&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;95&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;177&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="525.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="525.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="95" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="177"/>
+<USERDEFFIELDS field_id="1022" field_type="6" field_attribute="3" label_text="User Defined" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="**###BEFORE_INPUT###****###BEFORE_INPUT###****###AFTER_INPUT###****###AFTER_INPUT###****###WHEN_FIELD_CHANGE###****###WHEN_FIELD_CHANGE###****###BUTTON_CLICKED###**&lt;BUTTONS ExecScriptOnChange=&quot;0&quot;&gt;
+&lt;BUTTON Name=&quot;test&quot; Script=&quot;firstpayment =&amp;quot;April 2018&amp;quot;
+
+Expiredate = Month(firstpayment) &amp;amp; &amp;quot;/&amp;quot; &amp;amp; DaysInMonth(MonthNo(firstpayment),Year(firstpayment)) &amp;amp; &amp;quot;/&amp;quot; &amp;amp; Year(firstpayment)
+
+msgbox(DateForm111(Expiredate))
+
+NLSApp.SetField &amp;quot;TASK_DUE_DATE&amp;quot;, DateForm111(Expiredate)
+
+NLSApp.RefreshScreen()
+
+Function MonthNo(monthtxt)
+    mthno = &amp;quot;&amp;quot;
+    Select Case left(monthtxt, 3)
+        Case &amp;quot;Jan&amp;quot;
+            mthno = &amp;quot;1&amp;quot;
+        Case &amp;quot;Feb&amp;quot;
+            mthno = &amp;quot;2&amp;quot;
+        Case &amp;quot;Mar&amp;quot;
+            mthno = &amp;quot;3&amp;quot;
+        Case &amp;quot;Apr&amp;quot;
+            mthno = &amp;quot;4&amp;quot;
+        Case &amp;quot;May&amp;quot;
+            mthno = &amp;quot;5&amp;quot;
+        Case &amp;quot;Jun&amp;quot;
+            mthno = &amp;quot;6&amp;quot;
+        Case &amp;quot;Jul&amp;quot;
+            mthno = &amp;quot;7&amp;quot;
+        Case &amp;quot;Aug&amp;quot;
+            mthno = &amp;quot;8&amp;quot;
+        Case &amp;quot;Sep&amp;quot;
+            mthno = &amp;quot;9&amp;quot;
+        Case &amp;quot;Oct&amp;quot;
+            mthno = &amp;quot;10&amp;quot;
+        Case &amp;quot;Nov&amp;quot;
+            mthno = &amp;quot;11&amp;quot;
+        Case &amp;quot;Dec&amp;quot;
+            mthno = &amp;quot;12&amp;quot;
+        Case Else
+            mthno = &amp;quot;Invalid Month&amp;quot;
+    End Select
+    MonthNo = mthno
+End Function
+
+
+&amp;apos;Returns numeric value of last day of selected month
+
+Function DaysInMonth(monthno,yearno)
+
+     Select Case monthno
+           Case 1, 3, 5, 7, 8, 10, 12
+              DaysInMonth = 31
+
+          Case 4, 6, 9, 11
+              DaysInMonth = 30  
+
+          Case 2
+              &amp;apos;Is Year a leap year?
+              If  (yearno Mod 400 = 0) or (yearno Mod 4 = 0 and not yearno Mod 100 = 0) Then  
+                 DaysInMonth = 29
+              Else
+                 DaysInMonth = 28
+              End If
+
+     End Select
+
+End Function&quot;/&gt;
+&lt;/BUTTONS&gt;
+**###BUTTON_CLICKED###****###ON_FIELD_REFRESH###****###ON_FIELD_REFRESH###****###ON_INITIALIZE###****###ON_INITIALIZE###**" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;450&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;450&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;96&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;179&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="450.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="450.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="96" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="179"/>
+<USERDEFFIELDS field_id="1021" field_type="1" field_attribute="0" label_text="Principal On date ACTIVE" min_value="0.0000000000" max_value="9,999,999,999.0000000000" field_precision="2" default_value="0000000000000.00000" script_type="0" option_flags="8" script="" object_def="&lt;UDF StaticLeftPos=&quot;30&quot; StaticTopPos=&quot;262&quot; StaticWidth=&quot;141&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;30&quot; FieldTopPos=&quot;283&quot; FieldWidth=&quot;131&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;97&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;181&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="30.0000000000" StaticTopPos="262.0000000000" StaticWidth="141.0000000000" StaticHeight="20.0000000000" FieldLeftPos="30.0000000000" FieldTopPos="283.0000000000" FieldWidth="131.0000000000" FieldHeight="20.0000000000" TabOrder="97" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="181"/>
+<USERDEFFIELDS field_id="1020" field_type="1" field_attribute="0" label_text="Projected principal W/O" min_value="0.0000000000" max_value="9,999,999,999.0000000000" field_precision="2" default_value="0000000000000.00000" script_type="0" option_flags="8" script="" object_def="&lt;UDF StaticLeftPos=&quot;221&quot; StaticTopPos=&quot;260&quot; StaticWidth=&quot;135&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;211&quot; FieldTopPos=&quot;283&quot; FieldWidth=&quot;149&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;98&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;183&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="221.0000000000" StaticTopPos="260.0000000000" StaticWidth="135.0000000000" StaticHeight="20.0000000000" FieldLeftPos="211.0000000000" FieldTopPos="283.0000000000" FieldWidth="149.0000000000" FieldHeight="20.0000000000" TabOrder="98" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="183"/>
+<USERDEFFIELDS field_id="1019" field_type="0" field_attribute="0" label_text="% Pmts to Balance" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;208&quot; StaticTopPos=&quot;225&quot; StaticWidth=&quot;109&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;318&quot; FieldTopPos=&quot;225&quot; FieldWidth=&quot;48&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;99&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;185&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="208.0000000000" StaticTopPos="225.0000000000" StaticWidth="109.0000000000" StaticHeight="20.0000000000" FieldLeftPos="318.0000000000" FieldTopPos="225.0000000000" FieldWidth="48.0000000000" FieldHeight="20.0000000000" TabOrder="99" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="185"/>
+<USERDEFFIELDS field_id="1018" field_type="2" field_attribute="3" label_text="Second Payment Date" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;389&quot; StaticWidth=&quot;103&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;18&quot; FieldTopPos=&quot;409&quot; FieldWidth=&quot;84&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;100&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;187&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="389.0000000000" StaticWidth="103.0000000000" StaticHeight="20.0000000000" FieldLeftPos="18.0000000000" FieldTopPos="409.0000000000" FieldWidth="84.0000000000" FieldHeight="20.0000000000" TabOrder="100" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="187"/>
+<USERDEFFIELDS field_id="1017" field_type="4" field_attribute="3" label_text="Payment Frequency" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;31&quot; StaticTopPos=&quot;414&quot; StaticWidth=&quot;78&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;44&quot; FieldTopPos=&quot;395&quot; FieldWidth=&quot;68&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;101&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;189&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="31.0000000000" StaticTopPos="414.0000000000" StaticWidth="78.0000000000" StaticHeight="20.0000000000" FieldLeftPos="44.0000000000" FieldTopPos="395.0000000000" FieldWidth="68.0000000000" FieldHeight="20.0000000000" TabOrder="101" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="189">
+<USERDEFDATA row_id="187" field_reference="100897" field_data="MO" field_order="0" field_data_attribute="0"/>
+<USERDEFDATA row_id="188" field_reference="100897" field_data="SM" field_order="1" field_data_attribute="0"/>
+<USERDEFDATA row_id="189" field_reference="100897" field_data="BW" field_order="2" field_data_attribute="0"/>
+</USERDEFFIELDS>
+<USERDEFFIELDS field_id="1016" field_type="0" field_attribute="0" label_text="PI On date ACTIVE" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="8" script="" object_def="&lt;UDF StaticLeftPos=&quot;30&quot; StaticTopPos=&quot;203&quot; StaticWidth=&quot;169&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;30&quot; FieldTopPos=&quot;229&quot; FieldWidth=&quot;114&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;102&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;191&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="30.0000000000" StaticTopPos="203.0000000000" StaticWidth="169.0000000000" StaticHeight="20.0000000000" FieldLeftPos="30.0000000000" FieldTopPos="229.0000000000" FieldWidth="114.0000000000" FieldHeight="20.0000000000" TabOrder="102" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="191"/>
+<USERDEFFIELDS field_id="1015" field_type="0" field_attribute="3" label_text="Creater Email" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="1" script="" object_def="&lt;UDF StaticLeftPos=&quot;18&quot; StaticTopPos=&quot;562&quot; StaticWidth=&quot;103&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;128&quot; FieldTopPos=&quot;562&quot; FieldWidth=&quot;260&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;103&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;193&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="18.0000000000" StaticTopPos="562.0000000000" StaticWidth="103.0000000000" StaticHeight="20.0000000000" FieldLeftPos="128.0000000000" FieldTopPos="562.0000000000" FieldWidth="260.0000000000" FieldHeight="20.0000000000" TabOrder="103" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="193"/>
+<USERDEFFIELDS field_id="1014" field_type="0" field_attribute="3" label_text="Last Status" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;15&quot; StaticTopPos=&quot;539&quot; StaticWidth=&quot;105&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;128&quot; FieldTopPos=&quot;539&quot; FieldWidth=&quot;260&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;104&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;195&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="15.0000000000" StaticTopPos="539.0000000000" StaticWidth="105.0000000000" StaticHeight="20.0000000000" FieldLeftPos="128.0000000000" FieldTopPos="539.0000000000" FieldWidth="260.0000000000" FieldHeight="20.0000000000" TabOrder="104" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="195"/>
+<USERDEFFIELDS field_id="1013" field_type="0" field_attribute="4" label_text="Last Updated" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;514&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;128&quot; FieldTopPos=&quot;514&quot; FieldWidth=&quot;260&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;105&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;197&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="514.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="128.0000000000" FieldTopPos="514.0000000000" FieldWidth="260.0000000000" FieldHeight="20.0000000000" TabOrder="105" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="197"/>
+<USERDEFFIELDS field_id="1012" field_type="0" field_attribute="4" label_text="Representative" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="67" script="" object_def="&lt;UDF StaticLeftPos=&quot;707&quot; StaticTopPos=&quot;244&quot; StaticWidth=&quot;135&quot; StaticHeight=&quot;19&quot; FieldLeftPos=&quot;706&quot; FieldTopPos=&quot;263&quot; FieldWidth=&quot;258&quot; FieldHeight=&quot;158&quot; TabOrder=&quot;106&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;199&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="707.0000000000" StaticTopPos="244.0000000000" StaticWidth="135.0000000000" StaticHeight="19.0000000000" FieldLeftPos="706.0000000000" FieldTopPos="263.0000000000" FieldWidth="258.0000000000" FieldHeight="158.0000000000" TabOrder="106" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="199"/>
+<USERDEFFIELDS field_id="1011" field_type="6" field_attribute="0" label_text="" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="**###BEFORE_INPUT###****###BEFORE_INPUT###****###AFTER_INPUT###****###AFTER_INPUT###****###WHEN_FIELD_CHANGE###****###WHEN_FIELD_CHANGE###****###BUTTON_CLICKED###**&lt;BUTTONS ExecScriptOnChange=&quot;0&quot;&gt;
+&lt;BUTTON Name=&quot;ACTIVATE Settlement&quot; Script=&quot;&amp;apos;###TASK DETAIL - ADD DEBT SETTLEMENT UDF5 
+&amp;apos;On button Click 
+&amp;apos;Initiates process to create ACH payments and Billing transactions based on the payment schedule grid (UDF101) created originally in the TASK.
+ 
+     
+&amp;apos;GET INITIAL TASK/LOAN DETAILS
+    acctrefno = NLSapp.GetField(&amp;quot;TASK_NLS_REFNO&amp;quot;)
+    taskno = NLSapp.GetField(&amp;quot;TASK_REFNO&amp;quot;)
+    taskstatus = NLSapp.GetField(&amp;quot;TASK_STATUS&amp;quot;)
+    iscustompay = NLSapp.SQLSelectStatement(&amp;quot;Select custom_payment_schedule from loanacct_setup where  acctrefno = &amp;quot; &amp;amp; acctrefno)        
+    loanumber = NLSApp.SQLSelectStatement(&amp;quot;Select loan_number, loan_class2_no,shortname from loanacct where acctrefno = &amp;quot; &amp;amp; acctrefno)
+    class2no = NLSapp.SQLSelectStatementNextColumn()
+    shortname = NLSapp.SQLSelectStatementNextColumn()
+    &amp;apos;Payment schedule xml
+    getstrXML = NLSApp.SQLSelectStatement(&amp;quot;SELECT userdef101 from task_detail_grid where task_refno = &amp;quot; &amp;amp; taskno)
+    currfirstpaydt = NLSApp.GetField(&amp;quot;TASK_DETAIL_UDF9&amp;quot;)
+   &amp;apos;Disable any active ACH payments if they exist
+   NLSapp.SQLSelectStatement(&amp;quot;SELECT 0; UPDATE loanacct_ach SET status = 1 where status = 0 and acctrefno = &amp;quot;  &amp;amp; acctrefno)
+
+
+    If taskstatus = &amp;quot;APPROVED&amp;quot; Then
+        If Not currfirstpaydt = &amp;quot;&amp;quot; Then
+            NLSapp.ScriptOn(False)
+            makepaymentsFromtaskGrid getstrXMl, acctrefno, taskno, Day(currfirstpaydt),currfirstpaydt
+            NLSapp.ScriptOn(True)
+        Else
+            MsgBox &amp;quot;Please select the date of the first settlement payment.&amp;quot;, 16, &amp;quot;Missing 1st Payment Date&amp;quot;
+        End If
+    Else
+        NLSApp.Messagebox(&amp;quot;Settlement Request MUST have &amp;apos;APPROVED&amp;apos; status to proceed.&amp;quot;)
+    End If
+
+
+    Sub makepaymentsFromtaskGrid(strXMl, loanrefno, taskrefno, paydayvalue,currfirstpaydt)
+
+
+    &amp;apos;TASK status and payment date set validation
+        If  NOT CDate(currfirstpaydt) &amp;gt;=  CDate(NOW()) Then
+    Msgbox &amp;quot;The current FirstPpayment date must be set to a future date.&amp;quot; &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp; &amp;quot;Please change  to a valid date.&amp;quot;,16,&amp;quot;INVALID FIRST PAYMENT!&amp;quot;
+            NLSApp.MessageBox(&amp;quot;Activation Canceled.&amp;quot;)
+            Exit Sub
+
+        End if
+
+        If Not NLSApp.GetField(&amp;quot;TASK_DUE_DATE&amp;quot;) = &amp;quot;&amp;quot; Then
+            If  CDate(NLSApp.GetField(&amp;quot;TASK_DUE_DATE&amp;quot;)) &amp;lt;  CDate(NOW()) Then
+                msgtxt = &amp;quot;The First Month of the Payment Schedule has now passed and automatic Settlement Activation is unavailable.&amp;quot; &amp;amp; chr(13) &amp;amp;_ 
+                &amp;quot;Either create a new Settlement task with an updated payment schedule or the settlement will have to be set up for this loan manually.&amp;quot;
+                Msgbox msgtxt,16,&amp;quot;INVALID PAYMENT SCHEDULE!&amp;quot;
+                NLSApp.MessageBox(&amp;quot;Activation Canceled.&amp;quot;)
+                Exit Sub
+
+            End if
+
+        End if
+
+        If  CDate(NLSApp.GetField(&amp;quot;TASK_DUE_DATE&amp;quot;)) &amp;lt;  CDate(firstpaydt) and CDate(firstpaydt) &amp;gt;  CDate(NOW()) Then
+            msgtxt = &amp;quot;The selected First Payment date is not within the First Month of the Payment Schedule.&amp;quot; &amp;amp; chr(13) &amp;amp;_ 
+            &amp;quot;Either create a new Settlement task with an updated payment schedule or select a date between tomorrow and the end of the current month.&amp;quot;
+    Msgbox msgtxt,16,&amp;quot;INVALID FIRST PAYMENT!&amp;quot;
+            NLSApp.MessageBox(&amp;quot;Activation Canceled.&amp;quot;)
+            Exit Sub
+
+        End if
+
+        If  Month(CDate(NLSApp.GetField(&amp;quot;TASK_DUE_DATE&amp;quot;))) &amp;gt;  Month(CDate(firstpaydt)) Then
+            msgtxt = &amp;quot;The selected First Payment date is not within the First Month of the Payment Schedule.&amp;quot; &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp;_ 
+            &amp;quot;The automated activation will start payments based on the schedule as represented in the TASK.&amp;quot; &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp;_
+            &amp;quot;If you wish to include payments for months not listed in the schedule, either create a new Settlement task with an updated payment schedule or add the additional payments manually after the Settlement has been activated.&amp;quot; &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp;_
+            &amp;quot;Continue with current Schedule (Y/N)?&amp;quot;
+            If Msgbox(msgtxt,36,&amp;quot;FIRST PAYMENT WARNING!&amp;quot;) = 7 Then
+                NLSApp.MessageBox(&amp;quot;Activation Canceled.&amp;quot;)
+                Exit Sub
+            End if
+
+        End if
+
+        &amp;apos;Other Variables
+        ACHYes = NLSApp.YesNoMessageBox(&amp;quot;Will this Settlement use ACH payments? (Y/N)&amp;quot;)        
+        LOANxmlpart1 = &amp;quot;&amp;lt;NLS EnforceTagExistence=&amp;quot;&amp;quot;1&amp;quot;&amp;quot;&amp;gt;&amp;lt;LOAN UpdateFlag=&amp;quot;&amp;quot;1&amp;quot;&amp;quot; AcctRefno=&amp;quot;&amp;quot;&amp;quot; &amp;amp; loanrefno &amp;amp; &amp;quot;&amp;quot;&amp;quot;&amp;gt;&amp;quot;
+        LOANxmlpart2 = &amp;quot;&amp;quot;
+        LOANxmlpart3 = &amp;quot;&amp;lt;/LOAN&amp;gt;&amp;lt;/NLS&amp;gt;&amp;quot;
+        TASKxmlpart1 = &amp;quot;&amp;lt;NLS EnforceTagExistence=&amp;quot;&amp;quot;1&amp;quot;&amp;quot;&amp;gt;&amp;lt;TASK UpdateFlag=&amp;quot;&amp;quot;1&amp;quot;&amp;quot; TaskRefno=&amp;quot;&amp;quot;&amp;quot; &amp;amp; taskrefno &amp;amp; &amp;quot;&amp;quot;&amp;quot;&amp;gt;&amp;quot;
+        TASKxmlpart2 = &amp;quot;&amp;quot;
+        TASLxmlpart3 = &amp;quot;&amp;lt;/TASK&amp;gt;&amp;lt;/NLS&amp;gt;&amp;quot;
+        commentbodyrow = 0
+        commenthead = &amp;quot;The below recurring Settlement payments were created.&amp;quot;
+        acctnum = &amp;quot;&amp;quot;
+        accttype = &amp;quot;&amp;quot;
+        abanum = &amp;quot;&amp;quot;
+        achco = &amp;quot;&amp;quot;
+        allachsetups = &amp;quot;&amp;quot;
+        
+        &amp;apos;*** VALUE below can vary by DB
+        &amp;apos;Custom Transaction Codes 8460, 8200 and 8440 to be set up in NLS specifically to track Debt settlement agreement amount, 
+        &amp;apos;payments and projected principal write off (projWO)
+        DebtSettlementTC = &amp;quot;8460&amp;quot;
+        DebtSettlementprojWOTC = &amp;quot;8440&amp;quot;
+        
+&amp;apos;--------    START ACH SET UP   --------------------
+    If ACHYes = 0 Then
+        If Not NLSApp.YesNoMessagebox(&amp;quot;No ACH set up will be created for this Settlement. Do you wish to Activate The Settlement anyway? (Y/N)&amp;quot;) Then
+            NLSApp.MessageBox(&amp;quot;Activation Canceled.&amp;quot;)
+            Exit Sub
+        Else
+            NLSApp.Messagebox(&amp;quot;This Activation will create Settlement Billing Only with no payment set up.&amp;quot;)
+        End If
+    Else
+        &amp;apos;1. Get current Loan bank account information if exist. Data entry required if no ACTIVE bank information exist on loan
+        currACHsetup = getcurrentACHinfo(acctrefno, &amp;quot;0&amp;quot;)
+        &amp;apos;return value example &amp;quot;1|0|123456789|11|123456...&amp;quot; parsing map([ACH code]|[acct type]|[ABA Number]|[NLS ACHco ID]|[Account number])
+
+        If Not currACHsetup = &amp;quot;&amp;quot; Then
+            &amp;apos;parse currACHsetup return value
+            acctnum = right(currACHsetup, len(currACHsetup) - 13)
+            allachsetups = left(currACHsetup, 1)
+            accttype = MySubstring(currACHsetup, 1, 1)
+            abanum = MySubstring(currACHsetup, 2, 9)
+            achco = MySubstring(currACHsetup, 11, 2)
+            If Left(MySubstring(currACHsetup, 11, 2), 1) = &amp;quot;0&amp;quot; Then
+                achco = Right(MySubstring(currACHsetup, 11, 2), 1)
+            Else
+                achco = MySubstring(currACHsetup, 11, 2)
+            End If
+        Else
+            Exit Sub
+        End If
+
+        &amp;apos;2. BEGIN parsing grid for payment plan
+        strXMl = Replace(strXMl, &amp;quot;&amp;amp;&amp;quot;, &amp;quot;&amp;amp;amp;&amp;quot;)
+        Set xmlDoc = CreateObject(&amp;quot;Msxml2.DOMDocument&amp;quot;)                                                                                                                                             
+        xmlDoc.setProperty &amp;quot;SelectionLanguage&amp;quot;, &amp;quot;XPath&amp;quot;                                                                                                                                             
+
+        Err.Clear
+        On Error Resume Next
+        xmlDoc.loadxml(strXMl)
+        If Err.Number &amp;lt;&amp;gt; 0 Then
+            &amp;apos;Exit Function                                                                                                                                                                          
+            NLSapp.MessageBox(Err.Description)
+        End If
+        On Error GoTo 0
+                                                                                                                                                                                                       
+        Set nodesList = xmlDoc.documentelement.selectNodes(&amp;quot;/DATA/ROW&amp;quot;)                                                                                                                             
+        counter = nodesList.length
+
+        count = 1
+
+        For x = 1 To counter
+                                                                                                                                                                                                       
+           Set currNode=nodesList.nextNode                                                                                                                                                             
+           CurrNodeName = currNode.nodename
+                                                                                                                                                                                                       
+           Set cnode = currNode.childnodes                                                                                                                                                             
+                                                                                                                                                                                                       
+           For Each c In cnode
+
+                name = c.getAttribute(&amp;quot;Name&amp;quot;)
+                value = c.getAttribute(&amp;quot;Value&amp;quot;)
+
+                If name = &amp;quot;Month&amp;quot; Then
+                    Lastmonth = Thismonth
+                    Thismonth = value
+
+                    If count = 1 Then
+                        Firstmonth = Lastmonth
+                    End If
+
+                End If
+
+                If name = &amp;quot;Amount&amp;quot; Then
+                    Lastamount = Thisamount
+                    Thisamount = value
+
+                    If value = value1 Then
+                        count = count + 1
+
+                    Else
+                        firstmnth = mnth
+                        If value1 &amp;lt;&amp;gt; &amp;quot;&amp;quot; Then
+
+                            LOANxmlpart2section = buildsettlementpayments(firstmonth, count, Lastamount, paydayvalue, acctrefno, taskno, abanum, acctnum, accttype, achco)
+                            &amp;apos;Example XML return string: &amp;lt;ACH ACHCompanyID=&amp;quot;24&amp;quot; ABANumber=&amp;quot;123456789&amp;quot; AccountNumber=&amp;quot;789654123&amp;quot; Amount=&amp;quot;100.00&amp;quot; BillingStartDate=&amp;quot;10/15/2017&amp;quot; BillingStartDateDayValue=&amp;quot;15&amp;quot; BillingMaxNumberOfDraw=&amp;quot;7&amp;quot; AmountType=&amp;quot;0&amp;quot; 
+                            &amp;apos;AccountType = &amp;quot;0&amp;quot; DebitOrCredit=&amp;quot;D&amp;quot; OptionFlags=&amp;quot;2&amp;quot; BillingType=&amp;quot;2&amp;quot; /&amp;gt; 
+
+                            commentbodyrowno = commentbodyrowno + 1
+                            commentbodyrow = commentbodyrowno &amp;amp; &amp;quot;.  Starting  &amp;quot; &amp;amp; left(firstmonth, 3) &amp;amp; &amp;quot; &amp;quot; &amp;amp; paydayvalue &amp;amp; &amp;quot; &amp;quot; &amp;amp; right(firstmonth, 4) &amp;amp; &amp;quot;, &amp;quot; &amp;amp; count &amp;amp; &amp;quot; payments of $&amp;quot; &amp;amp; Lastamount &amp;amp; &amp;quot;.&amp;quot;
+                            commentbody = commentbody &amp;amp; chr(13) &amp;amp; commentbodyrow
+
+                            If Not LOANxmlpart2section = &amp;quot;&amp;quot; Then
+                                LOANxmlpart2 = LOANxmlpart2 &amp;amp; chr(13) &amp;amp; LOANxmlpart2section
+                            End If
+
+                            &amp;apos;If user previously chose to add bank information for each payment amount (allachsetups = &amp;quot;3&amp;quot;)
+                            If allachsetups = &amp;quot;3&amp;quot; Then
+                                currACHsetup = getcurrentACHinfo(acctrefno, allachsetups)
+                                acctnum = right(currACHsetup, len(currACHsetup) - 13)
+                                allachsetups = left(currACHsetup, 1)
+                                accttype = MySubstring(currACHsetup, 1, 1)
+                                abanum = MySubstring(currACHsetup, 2, 9)
+                                achco = MySubstring(currACHsetup, 11, 2)
+                                If Left(MySubstring(currACHsetup, 11, 2), 1) = &amp;quot;0&amp;quot; Then
+                                    achco = Right(MySubstring(currACHsetup, 11, 2), 1)
+                                Else
+                                    achco = MySubstring(currACHsetup, 11, 2)
+                                End If
+                            End If
+                        End If
+                        value1 = value
+                        count = 1
+                        nextmoval = nextmoval + count
+                    End If
+
+                End If
+
+            Next
+        Next
+
+         &amp;apos;3. Create ACH payments
+
+        If Not LOANxmlpart2 = &amp;quot;&amp;quot; Then
+            ImportACHXML(LOANxmlpart1 &amp;amp; LOANxmlpart2 &amp;amp; LOANxmlpart3)
+        Else
+            NLSApp.MessageBox(&amp;quot;No Payments were selected to create.&amp;quot; &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp; &amp;quot;Process terminated.&amp;quot;)
+            Exit Sub
+        End If
+
+        &amp;apos;Confirmation to Keep or delete payments
+        paymentlookupsql = &amp;quot;SELECT  Convert(varchar(5),ROW_NUMBER ( )  OVER ( PARTITION BY acctrefno ORDER BY billing_start_date ))+&amp;apos;. Starting &amp;apos; + left( billing_start_date,11)+&amp;apos;, &amp;apos;+&amp;quot; &amp;amp; _
+                                 &amp;quot; convert(varchar(5),max_num_of_draws)+&amp;apos; payments of $&amp;apos;+convert(varchar(15),amount_fixed)+&amp;apos;.&amp;apos;&amp;quot; &amp;amp; _
+                                 &amp;quot; from loanacct_ach where description like &amp;apos;Settlement Payments%&amp;apos;&amp;quot; &amp;amp; _
+                                 &amp;quot;and description like &amp;apos;%&amp;quot; &amp;amp; taskrefno &amp;amp; &amp;quot;%&amp;apos; and billing_type = 2 and acctrefno = &amp;quot; &amp;amp; loanrefno
+
+        deletepaymentsql = &amp;quot;SELECT 0; DELETE from loanacct_ach where row_id  IN (SELECT  Convert(varchar(9),row_id ) &amp;quot; &amp;amp; _
+                                 &amp;quot; from loanacct_ach where description like &amp;apos;Settlement Payments%&amp;apos;&amp;quot; &amp;amp; _
+                                 &amp;quot;and description like &amp;apos;%&amp;quot; &amp;amp; taskrefno &amp;amp; &amp;quot;%&amp;apos; and billing_type = 2 and acctrefno = &amp;quot; &amp;amp; loanrefno &amp;amp; &amp;quot;)&amp;quot;
+
+        countpaymentsql = &amp;quot;SELECT  Convert(varchar(9),count(row_id) ) &amp;quot; &amp;amp; _
+                                 &amp;quot; from loanacct_ach where description like &amp;apos;Settlement Payments%&amp;apos;&amp;quot; &amp;amp; _
+                                 &amp;quot;and description like &amp;apos;%&amp;quot; &amp;amp; taskrefno &amp;amp; &amp;quot;%&amp;apos; and billing_type = 2 and acctrefno = &amp;quot; &amp;amp; loanrefno
+
+        paymentcount = NLSApp.SQLSelectStatement(countpaymentsql)
+
+        paymentlookup = NLSApp.SQLSelectStatement(paymentlookupsql)
+
+        Do Until paymentlookup = &amp;quot;***END OF RESULT***&amp;quot;
+
+            paymentlist = paymentlist &amp;amp; chr(13) &amp;amp; paymentlookup
+            paymentlookup = NLSApp.SQLSelectStatementReadNext()
+
+        Loop
+        
+&amp;apos;--------    END ACH SET UP   --------------------
+
+    &amp;apos;USER CONFIRMATION TO CONTINUE
+        
+        If not NLSApp.YesNoMessageBox(&amp;quot;The below recurring Settlement payments were created.&amp;quot; &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp; paymentlist &amp;amp; chr(13) &amp;amp; chr(13) &amp;amp; &amp;quot;DO YOU WANT TO KEEP THEM?&amp;quot;) Then
+        &amp;apos;If user chose to not keep ACH payments
+            &amp;apos;Delete ach row ids
+            NLSApp.SQLSelectStatement(deletepaymentsql)
+            paymentcount2 = NLSApp.SQLSelectStatement(countpaymentsql)
+            If paymentcount2 = &amp;quot;0&amp;quot; Then
+                NLSApp.MessageBox(&amp;quot;All recurring payments have been deleted&amp;quot;)
+            Else
+                NLSApp.MessageBox(&amp;quot;There was a problem with deleting the payments. Please validate loan ACH set up.&amp;quot;)
+            End If
+            
+            &amp;apos;Un-check POA check box (detail 2 udf18)
+            NLSApp.SQLSelectStatement( &amp;quot;SELECT 0; UPDATE loanacct_detail_2 SET userdef18 = 0 where acctrefno = &amp;quot; &amp;amp; acctrefno)
+            Exit Sub
+        End If
+        
+    End If
+    
+&amp;apos;------ Begin close out TASK steps   --------------------    
+    &amp;apos;A. Cure the loan of all Billing Transactions  and fees due
+        autocure (acctrefno)
+
+
+    &amp;apos;B. Update TASK Start date (used to record Active settlement start date)
+        NLSApp.SetField &amp;quot;TASK_START_DATE&amp;quot;, NLSApp.SQLSelectStatement(&amp;quot;select convert(char(10),getdate(),111)&amp;quot;)
+        
+    &amp;apos;C. Disable current billing process (add custom payment check box/remove custom un-billed custom payments)
+        If iscustompay = 0 Then
+            Updatecustompaysql = &amp;quot;SELECT 0; UPDATE loanacct_setup SET custom_payment_schedule = 1 where acctrefno = &amp;quot; &amp;amp; acctrefno
+        Else
+            Updatecustompaysql = &amp;quot;SELECT 0; Delete from loanacct_custom_pay_sched where payment_billed = 0 and acctrefno = &amp;quot; &amp;amp; acctrefno
+
+        End If
+
+        NLSapp.SQLSelectStatement(Updatecustompaysql)
+        
+    &amp;apos;D. Disable any active ACH payments if they exist
+        &amp;apos;NLSapp.SQLSelectStatement(&amp;quot;SELECT 0; UPDATE loanacct_ach SET status = 1 where status = 0 and acctrefno = &amp;quot;  &amp;amp; acctrefno)
+        &amp;apos;NLSapp.SQLSelectStatement(&amp;quot;SELECT 0; UPDATE loanacct_ach SET status = 1 where status = 0 and acctrefno = &amp;quot;  &amp;amp; acctrefno &amp;amp; &amp;quot; and description not like &amp;apos;%&amp;quot; &amp;amp; taskno &amp;amp; &amp;quot;&amp;apos;&amp;quot;)
+
+    &amp;apos;E. Get current loan balance to save to TASK at activation
+        currloanbal = NLSApp.SQLSelectStatement(&amp;quot;select current_payoff_balance,current_principal_balance,current_interest_balance from loanacct where acctrefno = &amp;quot; &amp;amp; NLSApp.GetField(&amp;quot;TASK_NLS_REFNO&amp;quot;))
+        currloanprinbal = NLSapp.SQLSelectStatementNextColumn()
+        currloanintbal = NLSapp.SQLSelectStatementNextColumn()
+        currloanothbal = currloanbal-currloanprinbal-currloanintbal
+        
+    &amp;apos;F. Create Recurring Billing Transactions for Settlement payments
+        If ImportXML(buildrecurringTransFromtaskGrid (getstrXML, loanumber, taskno, paydayvalue)) = &amp;quot;&amp;quot; Then
+            DSBilltransMaint()
+                                  NLSApp.Messagebox(&amp;quot;Billing Tranactions complete.&amp;quot;)
+                                Else
+                                    NLSApp.Messagebox(&amp;quot;There was a problem creating the recurring Debt Settlement billing Transactions.&amp;quot; &amp;amp; chr(13) &amp;amp; &amp;quot;Please contact the system administrator. &amp;quot;)
+                                End If
+    &amp;apos;G. Update TASK DETAIL UDF fields to record loan balance at time Active Settlement starts
+        sumallpmnts = GetTotalFromtaskGrid101(getstrXML, &amp;quot;Amount&amp;quot;)
+                               ProjWO = Round(currloanprinbal-sumallpmnts,2)
+        NLSApp.SetField &amp;quot;TASK_DETAIL_UDF16&amp;quot;, &amp;quot;$&amp;quot; &amp;amp; Round(currloanbal, 2)
+        If currloanbal &amp;gt; 0 Then
+            NLSApp.SetField &amp;quot;TASK_DETAIL_UDF19&amp;quot;, Round(sumallpmnts / currloanbal * 100, 2) &amp;amp; &amp;quot;%&amp;quot;
+        Else
+            NLSApp.SetField &amp;quot;TASK_DETAIL_UDF19&amp;quot;,&amp;quot;0.00&amp;quot;
+        End if
+        NLSApp.SetField &amp;quot;TASK_DETAIL_UDF20&amp;quot;, ProjWO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        NLSApp.SetField &amp;quot;TASK_DETAIL_UDF21&amp;quot;, currloanprinbal
+        NLSApp.SaveScreen()
+
+    &amp;apos;H. Add TASK Comment 
+        &amp;apos;Create body of TASK comment message.
+        summary = NLSApp.GetField(&amp;quot;TASK_DETAIL_UDF6&amp;quot;)
+        commenthead = &amp;quot;Loan &amp;quot; &amp;amp; loanumber &amp;amp; &amp;quot; - &amp;quot; &amp;amp;  shortname &amp;amp;  Chr(13) &amp;amp; &amp;quot;Balance at time of ACTIVE SETTLEMENT: $&amp;quot; &amp;amp; Round(currloanbal, 2) &amp;amp;  Chr(13) &amp;amp;  Chr(13) &amp;amp; &amp;quot;The below recurring Settlement payments were created.&amp;quot;
+        &amp;apos;TASKxmlpart2 = &amp;quot;&amp;lt;TASKCOMMENTS Comment=&amp;quot;&amp;quot;&amp;quot; &amp;amp; commenthead &amp;amp; CHR(13) &amp;amp; commentbody &amp;amp;  Chr(13) &amp;amp;  Chr(13) &amp;amp; &amp;quot;Offer Summary:  &amp;quot; &amp;amp; summary &amp;amp; &amp;quot;&amp;quot;&amp;quot; Category=&amp;quot;&amp;quot;TASK&amp;quot;&amp;quot; CommentDescription=&amp;quot;&amp;quot;Added Settlement Payments&amp;quot;&amp;quot;/&amp;gt;&amp;quot; &amp;amp; chr(13)
+        &amp;apos;    Example XML return string: &amp;lt;TASKCOMMENTS Comment=&amp;quot;The below recurring Settlement payments were created.
+
+        &amp;apos;    1.  Starting  Nov 8 2017, 5 payments of $1,000.00.
+        &amp;apos;    2.  Starting  Apr 8 2018, 3 payments of $1,500.00.
+        &amp;apos;    3.  Starting  Jul 8 2018, 3 payments of $1,000.00.
+        &amp;apos;    4.  Starting  Oct 8 2018, 1 payments of $2,000.00.&amp;quot; Category=&amp;quot;TASK&amp;quot; CommentDescription=&amp;quot;Added Settlement Payments&amp;quot;/&amp;gt;             
+
+    &amp;apos;I. Update TASK Status
+        NLSApp.SetField &amp;quot;TASK_STATUS&amp;quot;, &amp;quot;LOAN IN ACTIVE SETTLEMENT&amp;quot;
+
+         NLSApp.SaveScreen()  
+
+
+       fullcomment = commenthead &amp;amp; CHR(13) &amp;amp; commentbody &amp;amp;  Chr(13) &amp;amp;  Chr(13) &amp;amp; &amp;quot;Offer Summary:  &amp;quot; &amp;amp; summary
+
+       taskcommentsql = &amp;quot;select 0; INSERT task_comments (task_refno,category_id,created,created_by,private,comments,comment_description,comment_type) values &amp;quot; &amp;amp; _
+             &amp;quot;(&amp;quot; &amp;amp; taskno &amp;amp; &amp;quot;,9,getdate(),0,0,&amp;apos;&amp;quot; &amp;amp; fullcomment &amp;amp; &amp;quot;&amp;apos;,&amp;apos;Added Settlement Payments&amp;apos;,0)&amp;quot;
+       &amp;apos;Use NLS sql update API to add comment to TASK
+       NLSApp.SQLSelectStatement(taskcommentsql)
+
+       &amp;apos;ImportXML(TASKxmlpart1 &amp;amp; TASKxmlpart2 &amp;amp; TASLxmlpart3) XML import not used
+
+    &amp;apos;J. Loan Updates
+       &amp;apos;Add new loan status and Debt settlement transaction code for amount of the total payments
+       loanxmlstring = &amp;quot;&amp;lt;NLS&amp;gt;&amp;lt;LOAN UpdateFlag=&amp;quot;&amp;quot;1&amp;quot;&amp;quot; AcctRefno=&amp;quot;&amp;quot;&amp;quot; &amp;amp; loanrefno &amp;amp; _
+       &amp;quot;&amp;quot;&amp;quot;&amp;gt;&amp;lt;LOANSTATUSES Operation=&amp;quot;&amp;quot;ADD&amp;quot;&amp;quot; LoanStatusCode=&amp;quot;&amp;quot;ACTIVE SETTLEMENT&amp;quot;&amp;quot; EffectiveDate=&amp;quot;&amp;quot;&amp;quot; &amp;amp; NOW() &amp;amp; &amp;quot;&amp;quot;&amp;quot;/&amp;gt;&amp;lt;/LOAN&amp;gt;&amp;quot; &amp;amp; _
+       &amp;quot;&amp;lt;TRANSACTIONS &amp;gt;&amp;lt;TRANSACTIONCODE TransactionCode=&amp;quot;&amp;quot;&amp;quot; &amp;amp; DebtSettlementTC &amp;amp; &amp;quot;&amp;quot;&amp;quot; EffectiveDate=&amp;quot;&amp;quot;&amp;quot; &amp;amp; Month(NOW()) &amp;amp; &amp;quot;/&amp;quot; &amp;amp; Day(NOW()) &amp;amp; &amp;quot;/&amp;quot; &amp;amp; Year(NOW()) &amp;amp; &amp;quot;&amp;quot;&amp;quot; DateDue=&amp;quot;&amp;quot;&amp;quot; &amp;amp; NOW() &amp;amp; _
+       &amp;quot;&amp;quot;&amp;quot; LoanNumber=&amp;quot;&amp;quot;&amp;quot; &amp;amp; loanumber &amp;amp; &amp;quot;&amp;quot;&amp;quot; Amount=&amp;quot;&amp;quot;&amp;quot; &amp;amp; sumallpmnts &amp;amp; &amp;quot;&amp;quot;&amp;quot;/&amp;gt;&amp;quot; &amp;amp; _
+       &amp;quot;&amp;lt;TRANSACTIONCODE TransactionCode=&amp;quot;&amp;quot;&amp;quot; &amp;amp; DebtSettlementprojWOTC &amp;amp; &amp;quot;&amp;quot;&amp;quot; EffectiveDate=&amp;quot;&amp;quot;&amp;quot; &amp;amp; Month(NOW()) &amp;amp; &amp;quot;/&amp;quot; &amp;amp; Day(NOW()) &amp;amp; &amp;quot;/&amp;quot; &amp;amp; Year(NOW()) &amp;amp; &amp;quot;&amp;quot;&amp;quot; DateDue=&amp;quot;&amp;quot;&amp;quot; &amp;amp; NOW() &amp;amp; _
+       &amp;quot;&amp;quot;&amp;quot; LoanNumber=&amp;quot;&amp;quot;&amp;quot; &amp;amp; loanumber &amp;amp; &amp;quot;&amp;quot;&amp;quot; Amount=&amp;quot;&amp;quot;&amp;quot; &amp;amp; ProjWO &amp;amp; &amp;quot;&amp;quot;&amp;quot;/&amp;gt;&amp;lt;/TRANSACTIONS&amp;gt;&amp;lt;/NLS&amp;gt;&amp;quot;
+
+       &amp;apos;NLSApp.MessageBox(loanxmlstring)  
+       ImportXML(loanxmlstring)  
+
+       &amp;apos;NLSApp.SQLSelectStatement(&amp;quot;select 0; UPDATE loanacct_statuses SET  status_code_no = 33,  effective_date = getdate() where  loanacct_statuses = 32 and  acctrefno = &amp;quot; &amp;amp; acctrefno)
+        
+       NLSApp.SaveScreen()
+       
+    &amp;apos;K. Send Email notices
+       &amp;apos;DSemailnotices taskno,class2no
+       
+    &amp;apos;L. Final Completion Message 
+       NLSApp.MessageBox(&amp;quot;Process Completed.&amp;quot; &amp;amp;chr(13) &amp;amp; &amp;quot;Loan &amp;quot; &amp;amp; loanumber &amp;amp; &amp;quot; has been set to ACTIVE SETTLEMENT status.&amp;quot;)
+
+    End Sub
+       
+
+                                                                                                                                                         &quot;/&gt;
+&lt;BUTTON Name=&quot;Refresh Expire Date&quot; Script=&quot;firstpayment =NLSApp.GetField(&amp;quot;TASK_DETAIL_UDF9&amp;quot;)
+
+Expiredate = Month(firstpayment) &amp;amp; &amp;quot;/&amp;quot; &amp;amp; DaysInMonth(Month(firstpayment),year(firstpayment)) &amp;amp; &amp;quot;/&amp;quot; &amp;amp;  year(firstpayment)
+
+NLSApp.SetField &amp;quot;TASK_DUE_DATE&amp;quot;, DateForm111(Expiredate)
+
+NLSApp.SaveScreen()&quot;/&gt;
+&lt;/BUTTONS&gt;
+**###BUTTON_CLICKED###****###ON_FIELD_REFRESH###****###ON_FIELD_REFRESH###****###ON_INITIALIZE###****###ON_INITIALIZE###**" object_def="&lt;UDF StaticLeftPos=&quot;39&quot; StaticTopPos=&quot;748&quot; StaticWidth=&quot;104&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;18&quot; FieldTopPos=&quot;384&quot; FieldWidth=&quot;176&quot; FieldHeight=&quot;23&quot; TabOrder=&quot;6&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;201&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="39.0000000000" StaticTopPos="748.0000000000" StaticWidth="104.0000000000" StaticHeight="20.0000000000" FieldLeftPos="18.0000000000" FieldTopPos="384.0000000000" FieldWidth="176.0000000000" FieldHeight="23.0000000000" TabOrder="6" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="201"/>
+<USERDEFFIELDS field_id="1010" field_type="0" field_attribute="4" label_text="Settlement Company Details" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="67" script="" object_def="&lt;UDF StaticLeftPos=&quot;707&quot; StaticTopPos=&quot;13&quot; StaticWidth=&quot;190&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;707&quot; FieldTopPos=&quot;34&quot; FieldWidth=&quot;260&quot; FieldHeight=&quot;207&quot; TabOrder=&quot;107&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;203&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="707.0000000000" StaticTopPos="13.0000000000" StaticWidth="190.0000000000" StaticHeight="20.0000000000" FieldLeftPos="707.0000000000" FieldTopPos="34.0000000000" FieldWidth="260.0000000000" FieldHeight="207.0000000000" TabOrder="107" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="203"/>
+<USERDEFFIELDS field_id="1008" field_type="0" field_attribute="4" label_text="As of" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;204&quot; StaticTopPos=&quot;666&quot; StaticWidth=&quot;30&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;236&quot; FieldTopPos=&quot;666&quot; FieldWidth=&quot;125&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;108&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;205&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="204.0000000000" StaticTopPos="666.0000000000" StaticWidth="30.0000000000" StaticHeight="20.0000000000" FieldLeftPos="236.0000000000" FieldTopPos="666.0000000000" FieldWidth="125.0000000000" FieldHeight="20.0000000000" TabOrder="108" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="205"/>
+<USERDEFFIELDS field_id="1007" field_type="0" field_attribute="4" label_text="% Offer to Balance" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="Need Info" script_type="0" option_flags="0" script="" object_def="&lt;UDF StaticLeftPos=&quot;208&quot; StaticTopPos=&quot;174&quot; StaticWidth=&quot;94&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;318&quot; FieldTopPos=&quot;174&quot; FieldWidth=&quot;50&quot; FieldHeight=&quot;21&quot; TabOrder=&quot;109&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;207&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="208.0000000000" StaticTopPos="174.0000000000" StaticWidth="94.0000000000" StaticHeight="20.0000000000" FieldLeftPos="318.0000000000" FieldTopPos="174.0000000000" FieldWidth="50.0000000000" FieldHeight="21.0000000000" TabOrder="109" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="207"/>
+<USERDEFFIELDS field_id="1005" field_type="1" field_attribute="4" label_text="PI On date SUBMITTED" min_value="0.0000000000" max_value="9,999,999,999.0000000000" field_precision="2" default_value="0000000000000.00000" script_type="0" option_flags="8" script="" object_def="&lt;UDF StaticLeftPos=&quot;30&quot; StaticTopPos=&quot;150&quot; StaticWidth=&quot;184&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;30&quot; FieldTopPos=&quot;173&quot; FieldWidth=&quot;112&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;110&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;209&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="30.0000000000" StaticTopPos="150.0000000000" StaticWidth="184.0000000000" StaticHeight="20.0000000000" FieldLeftPos="30.0000000000" FieldTopPos="173.0000000000" FieldWidth="112.0000000000" FieldHeight="20.0000000000" TabOrder="110" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="209"/>
+<USERDEFFIELDS field_id="1004" field_type="5" field_attribute="4" label_text="Power of Attorney" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="0" script_type="0" option_flags="1" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;68&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;68&quot; FieldWidth=&quot;77&quot; FieldHeight=&quot;21&quot; TabOrder=&quot;4&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;211&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="68.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="68.0000000000" FieldWidth="77.0000000000" FieldHeight="21.0000000000" TabOrder="4" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="211"/>
+<USERDEFFIELDS field_id="1003" field_type="0" field_attribute="2" label_text="Hardship Reason" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="1" script="" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;46&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;46&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;3&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;213&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="46.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="46.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="3" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="213"/>
+<USERDEFFIELDS field_id="1002" field_type="0" field_attribute="2" label_text="Representative" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="**###BEFORE_INPUT###****###BEFORE_INPUT###****###AFTER_INPUT###****###AFTER_INPUT###****###WHEN_FIELD_CHANGE###****###WHEN_FIELD_CHANGE###****###BUTTON_CLICKED###****###BUTTON_CLICKED###****###ON_FIELD_REFRESH###****###ON_FIELD_REFRESH###****###ON_INITIALIZE###****###ON_INITIALIZE###**" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;24&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;24&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;2&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;215&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="24.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="24.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="2" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="215"/>
+<USERDEFFIELDS field_id="1001" field_type="0" field_attribute="2" label_text="Company" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="**###BEFORE_INPUT###****###BEFORE_INPUT###****###AFTER_INPUT###****###AFTER_INPUT###****###WHEN_FIELD_CHANGE###****###WHEN_FIELD_CHANGE###****###BUTTON_CLICKED###****###BUTTON_CLICKED###****###ON_FIELD_REFRESH###****###ON_FIELD_REFRESH###****###ON_INITIALIZE###****###ON_INITIALIZE###**" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;3&quot; StaticWidth=&quot;106&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;132&quot; FieldTopPos=&quot;2&quot; FieldWidth=&quot;262&quot; FieldHeight=&quot;20&quot; TabOrder=&quot;1&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;217&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="3.0000000000" StaticWidth="106.0000000000" StaticHeight="20.0000000000" FieldLeftPos="132.0000000000" FieldTopPos="2.0000000000" FieldWidth="262.0000000000" FieldHeight="20.0000000000" TabOrder="1" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="217"/>
+<USERDEFFIELDS field_id="1009" field_type="2" field_attribute="0" label_text="First payment Date" min_value="0.0000000000" max_value="999,999,999.0000000000" field_precision="0" default_value="" script_type="0" option_flags="0" script="**###BEFORE_INPUT###****###BEFORE_INPUT###****###AFTER_INPUT###****###AFTER_INPUT###****###WHEN_FIELD_CHANGE###**
+If  NOT NLSApp.GetField (&quot;TASK_DETAIL_UDF9&quot;) =  &quot;&quot; Then
+   &apos; If not NLSApp.Getfield(&quot;TASK_STATUS&quot;) = &quot;APPROVED&quot; Then
+   &apos;   NLSApp.Messagebox(&quot;Status must be APPROVED befor a First payment date can be added&quot;)
+   &apos;   NLSApp.SetField &quot;TASK_DETAIL_UDF9&quot;, &quot;&quot;
+  &apos; End if
+
+End if
+
+NLSApp.SaveScreen()**###WHEN_FIELD_CHANGE###****###BUTTON_CLICKED###**
+**###BUTTON_CLICKED###****###ON_FIELD_REFRESH###****###ON_FIELD_REFRESH###****###ON_INITIALIZE###****###ON_INITIALIZE###**" object_def="&lt;UDF StaticLeftPos=&quot;20&quot; StaticTopPos=&quot;322&quot; StaticWidth=&quot;132&quot; StaticHeight=&quot;20&quot; FieldLeftPos=&quot;18&quot; FieldTopPos=&quot;342&quot; FieldWidth=&quot;102&quot; FieldHeight=&quot;27&quot; TabOrder=&quot;5&quot; ScreenHeight=&quot;568&quot; ScreenWidth=&quot;1159&quot; ZOrder=&quot;219&quot; ReadOnly=&quot;0&quot;/&gt;
+" StaticLeftPos="20.0000000000" StaticTopPos="322.0000000000" StaticWidth="132.0000000000" StaticHeight="20.0000000000" FieldLeftPos="18.0000000000" FieldTopPos="342.0000000000" FieldWidth="102.0000000000" FieldHeight="27.0000000000" TabOrder="5" ScreenHeight="568.0000000000" ScreenWidth="1,159.0000000000" TaskHeaderName="" ReadOnlyFlag="false" ZOrder="219"/>
+<KEYRECORD code_id="0" numbering_key="0"/>
+<SCRIPTS code_id="6" script_type="0" script="**###Before Save###**acctrefno = NLSApp.GetField(&quot;TASK_NLS_REFNO&quot;)
+currstatus =  NLSApp.GetField(&quot;TASK_STATUS&quot;)
+laststatus =  NLSApp.GetField(&quot;TASK_DETAIL_UDF14&quot;)
+creatoremail = NLSApp.GetField(&quot;TASK_DETAIL_UDF15&quot;)
+CurrentDate = Now()
+loannumber = NLSApp.SQLSelectStatement(&quot;Select loan_number from loanacct where acctrefno = &quot; &amp; acctrefno)
+currentpayoffbal = NLSApp.SQLSelectStatement(&quot;Select current_payoff_balancer from loanacct where acctrefno = &quot; &amp; acctrefno)
+
+
+
+
+If currstatus = &quot;APPROVED&quot;  and (laststatus = &quot;APPROVAL PENDING&quot; or laststatus = &quot;NEW&quot;)Then
+   subjectstring1 = &quot;Debt Settlement APPROVED - Loan #&quot; &amp; loannumber
+   emailbody1 =  &quot;The debt settlement agreement for loan #&quot; &amp; loannumber &amp; &quot; has been approved.&quot;
+   &apos;serverName = &quot;Servicing CPlus&quot;
+   &apos;emailtoaddr =  &quot;somebody@gmail.com&quot;
+   &apos;emailfromaddr = &quot;consolplus-servicing@consolplus.com&quot;
+   serverName = &quot;Loan Servicing3&quot;
+   emailtoaddr =  creatoremail
+   emailfromaddr = &quot;svc.loanservicing@freedomdebtrelief.com&quot;
+
+   &apos;Set loan status to APPROVED SETTLEMENT
+   NLSApp.SetSecondaryLoanStatus acctrefno,CurrentDate,31,&quot;ADD&quot;
+
+   &apos;Send Email
+   NLSApp.SendEmailMessage serverName, emailtoaddr, emailfromaddr, subjectstring1, emailbody1
+
+End If
+
+
+If currstatus = &quot;DENIED&quot;  and (laststatus = &quot;APPROVAL PENDING&quot; or laststatus = &quot;NEW&quot;) Then
+   subjectstring1 = &quot;Debt Settlement DENIED - Loan #&quot; &amp; loannumber
+   emailbody1 =  &quot;The debt settlement agreement for loan #&quot; &amp; loannumber &amp; &quot; has been declined.&quot;
+   &apos;serverName = &quot;Servicing CPlus&quot;
+   &apos;emailtoaddr =  &quot;somebody@gmail.com&quot;
+   &apos;emailfromaddr = &quot;consolplus-servicing@consolplus.com&quot;
+   serverName = &quot;Loan Servicing3&quot;
+   emailtoaddr =  creatoremail
+   emailfromaddr = &quot;svc.loanservicing@freedomdebtrelief.com&quot;
+
+   &apos;Reset  LOAN detail input fields
+   deldetail2udfsql = &quot;Select 0; UPDATE loanacct_detail_2 Set userdef18 = NULL, userdef23 = NULL, userdef21 = NULL, userdef22 = NULL where acctrefno =  &quot; &amp; acctrefno
+   nlsapp.sqlselectstatement(deldetail2udfsql)
+
+   &apos;Send Email
+   NLSApp.SendEmailMessage serverName, emailtoaddr, emailfromaddr, subjectstring1, emailbody1
+
+End If
+
+
+
+NLSApp.SetField &quot;TASK_DETAIL_UDF14&quot;, currstatus
+NLSApp.SetField &quot;TASK_DETAIL_UDF13&quot;,CurrentDate
+
+
+
+
+
+**###Before Save###****###Before Activate###**acctrefno = NLSApp.GetField(&quot;TASK_NLS_REFNO&quot;)
+currstatus =  NLSApp.GetField(&quot;TASK_STATUS&quot;)
+laststatus =  NLSApp.GetField(&quot;TASK_DETAIL_UDF14&quot;)
+CurrentDate = Now()
+loannumber = NLSApp.SQLSelectStatement(&quot;Select loan_number from loanacct where acctrefno = &quot; &amp; acctrefno)
+requiredfield1 = NLSApp.GetField(&quot;TASK_DETAIL_UDF1&quot;)
+requiredfield2 = NLSApp.GetField(&quot;TASK_DETAIL_UDF2&quot;)
+requiredfield3 = NLSApp.GetField(&quot;TASK_DETAIL_UDF3&quot;)
+
+
+If currstatus = &quot;SUBMIT FOR APPROVAL&quot;  and laststatus = &quot;SUBMIT FOR APPROVAL&quot; Then
+ NLSApp.SetField &quot;TASK_STATUS&quot;, &quot;APPROVAL PENDING&quot;
+ NLSApp.SaveScreen()
+End If
+
+If currstatus &lt;&gt; &quot;CREATE REQUEST&quot; Then
+&apos;Disable the following fields for editing if the TASK is not in the CREATE REQUEST stage
+   NLSapp.EnableFields &quot;TASK_DETAIL_UDF1&quot;, false
+   NLSapp.EnableFields &quot;TASK_DETAIL_UDF2&quot;, false
+   NLSapp.EnableFields &quot;TASK_DETAIL_UDF3&quot;, false
+  &apos; NLSapp.EnableFields &quot;TASK_DETAIL_UDF9&quot;, false
+End if
+
+If currstatus = &quot;CREATE REQUEST&quot; Then
+   If requiredfield1 = &quot;&quot; or requiredfield2 = &quot;&quot; or requiredfield3 = &quot;&quot; Then
+      &apos;NLSApp.EnableFields &quot;TASK_DETAIL_UDF9&quot;, false
+      NLSApp.EnableFields &quot;TASK_DETAIL_UDF48&quot;, false
+   End If
+End if**###Before Activate###****###Before Create###****###Before Create###****###On Delete###****###On Delete###****###After Save###**
+**###After Save###****###After Create###**acctrefno = NLSApp.GetField(&quot;TASK_NLS_REFNO&quot;)
+udf05 = NLSApp.GetField(&quot;TASK_DETAIL_UDF5&quot;)
+
+
+If udf05 = &quot;&quot; or  udf05 = 0 Then
+   NLSApp.SetField &quot;TASK_DETAIL_UDF5&quot;, NLSApp.SQLSelectStatement(&quot;Select current_payoff_balance from loanacct where acctrefno = &quot; &amp; acctrefno)
+   NLSApp.SetField &quot;TASK_DETAIL_UDF8&quot;, NOW()
+   NLSApp.SaveScreen()
+End if**###After Create###****###On Add Button Clicked###****###On Add Button Clicked###****###Local Functions###**Sub DSBilltransMaint()
+    &apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;
+    &apos;Debt Billing Transaction (124) TC Maintainance
+    &apos;
+    &apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;&apos;
+	translookupsql = &quot;Select distinct &apos;UPDATE loanacct_recurring_trans set event_transaction_due_date = &apos;&apos;&apos; + convert(char(10),event_startdate+16,101) + &apos;&apos;&apos; where row_id = &apos; + convert(varchar(10),row_id)&quot; &amp; chr(13) &amp; _
+                     &quot;from loanacct_recurring_trans                             &quot; &amp; chr(13) &amp; _
+                     &quot;where rec_trans_description = &apos;Debt Settlment Billing Transactions&apos;          &quot; &amp; chr(13) &amp; _
+                     &quot;and event_startdate+16 &lt;&gt; event_transaction_due_date&quot;
+
+	 
+    transupdatesrow = NLSApp.SQLSelectStatement(translookupsql)
+      
+    If Not  transupdatesrow = &quot;&quot; Then  
+                 	
+		Do 	Until  transupdatesrow = &quot;***END OF RESULT***&quot;
+			transupdates =  transupdates &amp; chr(13) &amp;  transupdatesrow
+            transupdatesrow = NLSApp.SQLSelectStatementReadNext()
+		Loop 
+    End If
+
+    NLSapp.SQLSelectStatement(&quot;SELECT 0;  &quot; &amp; transupdates)
+
+End Sub 
+
+Function DSemailnotices(taskrefno,class2)
+ &apos;FUNCTION to process email notifications after a Debt settlement payment plan is completed and in ACTIVE SETTLEMENT
+ &apos;Messages will be segregated and sent based on required criteria
+ 
+ &apos;**GENERAL Notice**
+ &apos;Internal Email notice for all loans sent to ACTIVE SETTLEMENT
+ &apos;TBD
+ 
+ &apos;**STONERIDGE Notice**
+ &apos;Email Task comment if class2 = 26 (Stoneridge)
+ taskcomment = NLSApp.SQLSelectStatement(&quot;Select comments from task_comments where comment_description = &apos;Added Settlement Payments&apos; and task_refno = &quot; &amp; taskrefno )
+ 
+ Stoneridgeaclass2s = &quot;|26|32|&quot;
+ 
+   If InStr(Stoneridgeaclass2s, &quot;|&quot; &amp; 26 &amp;  &quot;|&quot;) &lt;&gt; 0 Then 
+      messageSubject = &quot;A StoneRidge Loan has entered into an active settlement&quot;
+      messageBody =  taskcomment 
+      NLSApp.SendEmailMessage &quot;Loan Servicing3&quot;,&quot;dan@freedomplus.com&quot;, &quot;svc.loanservicing@freedomdebtrelief.com&quot;, messageSubject,messageBody
+      NLSApp.SendEmailMessage &quot;Loan Servicing3&quot;,&quot;csilence@bills.com&quot;, &quot;svc.loanservicing@freedomdebtrelief.com&quot;, messageSubject,messageBody  
+      NLSapp.MessageBox(messageSubject &amp;  Chr(13) &amp; messageBody)	  
+   End if
+   DSemailnotices = 0
+End Function
+
+
+Function buildsettlementpayments(startmonth, pays, amount, dayvalue, loanrefno, taskrefno, abanum, acctnum, accttype, achco)
+        &apos;	=============================================================================================================================================================================
+        &apos;	Works only in debt settlement task to create ACH payments based on TASK payment schedule.
+        &apos;       Returns portion of xml import string used to create a records
+        &apos;	=============================================================================================================================================================================
+       
+ 
+        loannumb = NLSApp.SQLSelectStatement(&quot;SELECT loan_number from loanacct where acctrefno = &quot; &amp; loanrefno)
+        
+        &apos;Last Day of Month adjustment
+        &apos; If day value is not month end then subtract 1 day ...
+        If dayvalue &lt; DaysInMonth(MONTH(startmonth),YEAR(startmonth)) Then
+           dayvalueadd = dayvalue - 1
+        &apos;Else subtract 1 day from the last day of the month
+        Else
+           dayvalueadd = DaysInMonth(MONTH(startmonth),YEAR(startmonth)) - 1
+        End if
+
+        startdate = CDate(startmonth) + dayvalueadd
+
+        &apos;Adjustment to prevent acctdentaly selecting a past payment date or non business day for 1st payment
+        If Weekday(Date()) &gt;= 5 Then
+            If Weekday(Date()) = 5 Then
+                defaultdate = Date() + 2
+            End If
+            If Weekday(Date()) = 6 Then
+                defaultdate = Date() + 2
+            End If
+        Else
+            defaultdate = Date() + 1
+
+        End If
+
+        &apos;Request payment date
+        dayexists = &quot;x&quot;
+        Do Until dayexists = &quot;&quot;
+            Do Until CDate(DateVal1) &gt;= CDate(defaultdate)
+                DateVal1 = NLSApp.GetField(&quot;TASK_DETAIL_UDF9&quot;)
+
+                If Not CDate(DateVal1) &gt;= CDate(defaultdate) Then
+                    NLSApp.MessageBox(&quot;Payment date Must be equal to or greater than &quot; &amp; defaultdate &amp; &quot;.&quot; &amp; chr(13) &amp; &quot;Please Re-Enter.&quot;)
+                    DateVal1 = InputBox(&quot;1st Payment date must be equal to or greater than &quot; &amp; defaultdate &amp; &quot;.&quot;, &quot;Enter Payment Date&quot;, defaultdate)
+                    NLSApp.SQLSelectStatement(&quot;Select 0; Update task_detail SET userdef09 = convert(char(10),convert(datetime,&apos;&quot; &amp; DateVal1 &amp; &quot;&apos;),111) from task_detail where task_refno = &quot; &amp; NLSApp.Getfield(&quot;TASK_REFNO&quot;))
+                    startdate = DateVal1                 
+                    NLSapp.RefreshScreen()
+                End If
+            Loop
+            dayexists = NLSApp.SQLSelectStatement(&quot;SELECT CASE When billing_type = 0 Then &apos;BILLING&apos; When billing_type = 1 Then &apos;ONE-TIME&apos; When billing_type = 2 Then &apos;RECURRING&apos; End  FROM loanacct_ach Where acctrefno = &quot; &amp; loanrefno &amp; &quot; AND billing_next_date = &apos;&quot; &amp; DateVal1 &amp; &quot;&apos;&quot;)
+
+            If Not dayexists = &quot;&quot; Then
+                If Not (NLSApp.YesNoMessageBox(&quot;There is already an active &quot; &amp; dayexists &amp; &quot; payment scheduled on &quot; &amp; DateVal1 &amp; &quot; for this account.&quot; &amp; CHR(13) &amp; CHR(13) &amp; &quot;CONTINUE ANYWAY?&quot;)) Then
+                    NLSApp.MessageBox(&quot;Payment Aborted.&quot;)
+                    Exit Function
+                Else
+                    dayexists = &quot;&quot;
+                End If
+            End If
+        Loop
+
+        &apos;confirm Updates-----------------------------------
+        messagetext2 = &quot;You are about to create &quot; &amp; pays &amp; &quot; Recurring Settlement payments for loan  &quot; &amp; loannumb &amp; &quot;.&quot;
+        messagetext3 = &quot;Recurring Settlement paymentst Created &quot; &amp; NOW()
+        amount2 = &quot;$&quot; &amp; Formatdec(amount)
+        messagetext4 = &quot;Amount:&quot; &amp; String(34 - 1 - len(amount2), &quot; &quot;) &amp; amount2 &amp; _
+        CHR(13) &amp; &quot;Date Due:&quot; &amp; String(34 - 4 - len(DateVal1), &quot; &quot;) &amp; startdate &amp; _
+        CHR(13) &amp; &quot;Routing No:&quot; &amp; String(34 - 8 - len(abanum), &quot; &quot;) &amp; abanum &amp; _
+        CHR(13) &amp; &quot;Account No:&quot; &amp; String(15, &quot; &quot;) &amp; &quot;---------&quot; &amp; right(acctnum, 4) &amp; _
+        CHR(13) &amp; &quot;Account Type:&quot; &amp; String(34 - 12 - len(accttypetxt), &quot; &quot;) &amp; accttypetxt &amp; _
+        CHR(13) &amp; &quot;# of Payments:&quot; &amp; String(34 - 12 - len(pays), &quot; &quot;) &amp; pays &amp; _
+        CHR(13) &amp; CHR(13) &amp; ConfirmationStatusMsg
+        messagetext5 = &quot;     CONTINUE?&quot;
+        If (NLSApp.YesNoMessageBox(messagetext2 &amp; CHR(13) &amp; CHR(13) &amp; messagetext4 &amp; CHR(13) &amp; CHR(13) &amp; messagetext5)) Then
+            &apos;Execution updates---------------------------------
+            &apos;ACH Update---
+            buildsettlementpayments = &quot;&lt;ACH ACHCompanyID=&quot;&quot;&quot; &amp; achco &amp; &quot;&quot;&quot; ABANumber=&quot;&quot;&quot; &amp; abanum &amp; &quot;&quot;&quot; AccountNumber=&quot;&quot;&quot; &amp; acctnum &amp; &quot;&quot;&quot; Description=&quot;&quot;Settlement Payments|TASK refno &quot; &amp; taskrefno &amp; &quot;&quot;&quot; Amount=&quot;&quot;&quot; &amp; _
+            amount &amp; &quot;&quot;&quot; BillingStartDate=&quot;&quot;&quot; &amp; startdate &amp; &quot;&quot;&quot; BillingStartDateDayValue=&quot;&quot;&quot; &amp; dayvalue &amp; &quot;&quot;&quot; BillingMaxNumberOfDraw=&quot;&quot;&quot; &amp; pays &amp; &quot;&quot;&quot; AmountType=&quot;&quot;0&quot;&quot; AccountType=&quot;&quot;&quot; &amp; _
+            accttype &amp; &quot;&quot;&quot; DebitOrCredit=&quot;&quot;D&quot;&quot; OptionFlags=&quot;&quot;2&quot;&quot; BillingType=&quot;&quot;2&quot;&quot; /&gt;&quot;
+
+        Else
+            NLSApp.MessageBox(&quot;Payments Aborted.&quot;)
+            buildsettlementpayments = &quot;&quot;
+            Exit Function
+        End If
+        
+        &apos;Example XML return string: &lt;ACH ACHCompanyID=&quot;24&quot; ABANumber=&quot;123456789&quot; AccountNumber=&quot;789654123&quot; Amount=&quot;100.00&quot; BillingStartDate=&quot;10/15/2017&quot; BillingStartDateDayValue=&quot;15&quot; BillingMaxNumberOfDraw=&quot;7&quot; AmountType=&quot;0&quot; 
+        &apos;AccountType = &quot;0&quot; DebitOrCredit=&quot;D&quot; OptionFlags=&quot;2&quot; BillingType=&quot;2&quot; /&gt;
+    End Function
+
+&apos;==================================================================
+
+    
+ &apos;Returns active loan&apos;s current active ACH set up if exists for display or use in other calculations
+  Function getcurrentACHinfo(loanrefno, allach)
+
+         strSQL1 = &quot;select convert(varchar(3),ach_company_id),aba_number, substring(account_number,10,24),right(account_number,24),&quot; &amp; _
+        &quot;account_type = 0,Case when account_type = 0 then &apos;CHECKING&apos; else &apos;SAVINGS&apos; End from loanacct_ach WHERE status = 0 AND acctrefno = &quot; &amp; loanrefno
+
+        achco = NLSapp.SQLSelectStatement(strSQL1)
+
+        abanum = NLSapp.SQLSelectStatementNextColumn()
+        acctnumEncrptIV = NLSapp.SQLSelectStatementNextColumn()
+        acctnumEncrpt = NLSapp.SQLSelectStatementNextColumn()
+        accttype = NLSapp.SQLSelectStatementNextColumn()
+        accttypetxt = NLSapp.SQLSelectStatementNextColumn()
+
+        acctnum = NLSApp.NLSAESDecrypt(acctnumEncrpt, &quot;180175EFDC223018110F4ED14F1DA1D066D73380F0E99A0C0E0AE337052C8BB8&quot;, acctnumEncrptIV)
+
+        If achco = &quot;***END OF RESULT***&quot; Or achco = &quot;&quot; Then
+            If allach = &quot;0&quot; Then
+            NLSApp.MessageBox(&quot;There is no active Banking Account Information Available for this Account.&quot; &amp; chr(13) &amp; chr(13) &amp; &quot;You will be prompted to enter new bank account details?&quot;)
+            End If
+                ACHcosql = NLSapp.SQLSelectStatement(&quot;SELECT userdef18 FROM cif_detail Where cifno = 101304&quot;) &amp; loanrefno
+                ACHco = NLSapp.SQLSelectStatement(ACHcosql)
+                abanum = getvalidabano(x) 
+                If not abanum = &quot;&quot; Then
+                  acctnum = getvalidacctno(x)
+                  accttypetxt = getvalidaccttype(x)
+                  If accttypetxt = &quot;CHECKING&quot; Then
+                     accttype = 0
+                  Else
+                     accttype = 1
+                  End If
+                Else
+                 NLSApp.Messagebox(&quot;Routing Number needed to proceed.&quot; &amp; chr(13) &amp; chr(13) &amp; &quot;Canceling.&quot;)
+                 Exit Function
+                End If
+
+       End if
+
+            msgtitle =  &quot;MAINTAIN CURRENT BANKING SETUP?&quot;
+            msgtxt = &quot;Do you wish to use this information for all remaining Settlement ACH payments?&quot; &amp; chr(13)  &amp; chr(13) &amp; &quot;ABA - &quot; &amp; abanum &amp; chr(13) &amp; &quot;Acct - &quot; &amp; &quot;------&quot; &amp; right(acctnum, 4) &amp; chr(13) &amp; accttypetxt &amp; _
+                           chr(13) &amp; chr(13) &amp; &quot;If you select [NO] you will be prompmpted to re-add bank account information of each change in payment amount.&quot;
+            curracctinfo = msgtitle  &amp; chr(13)  &amp; chr(13) &amp; msgtxt
+            
+            If Not NLSApp.YesNoMessageBox(curracctinfo) Then
+                allach = &quot;3&quot;
+            Else
+                allach = &quot;1&quot;
+            End If
+      
+        ACHcosql = NLSapp.SQLSelectStatement(&quot;SELECT userdef18 FROM cif_detail Where cifno = 101304&quot;) &amp; loanrefno
+        ACHco = NLSapp.SQLSelectStatement(ACHcosql)
+
+         If Len(ACHco) = 1 Then
+            ACHco = &quot;0&quot; &amp; ACHco
+        End If
+        getcurrentACHinfo = allach &amp; accttype &amp; abanum &amp; ACHco &amp; acctnum
+ 
+End Function
+
+Function MySubstring(mytext,startindex,length)
+
+    stringx = right(  left( mytext,startindex+length),length)
+    
+     MySubstring = stringx
+
+End Function
+
+Function Monthtext(monthval)
+    mtext = &quot;&quot;
+    Select Case monthval
+        Case &quot;1&quot;
+            mtext = &quot;January&quot;
+        Case &quot;2&quot;
+            mtext = &quot;February&quot;
+        Case &quot;3&quot;
+            mtext = &quot;March&quot;
+        Case &quot;4&quot;
+            mtext = &quot;April&quot;
+        Case &quot;5&quot;
+            mtext = &quot;May&quot;
+        Case &quot;6&quot;
+            mtext = &quot;June&quot;
+        Case &quot;7&quot;
+            mtext = &quot;July&quot;
+        Case &quot;8&quot;
+            mtext = &quot;August&quot;
+        Case &quot;9&quot;
+            mtext = &quot;September&quot;
+        Case &quot;10&quot;
+            mtext = &quot;October&quot;
+        Case &quot;11&quot;
+            mtext = &quot;November&quot;
+        Case &quot;12&quot;
+            mtext = &quot;December&quot;
+        Case Else
+            mtext = &quot;Invalid Month value&quot;
+    End Select
+    Monthtext = mtext
+End Function
+
+Function MonthNo(monthtxt)
+    mthno = &quot;&quot;
+    Select Case left(monthtxt, 3)
+        Case &quot;Jan&quot;
+            mthno = &quot;1&quot;
+        Case &quot;Feb&quot;
+            mthno = &quot;2&quot;
+        Case &quot;Mar&quot;
+            mthno = &quot;3&quot;
+        Case &quot;Apr&quot;
+            mthno = &quot;4&quot;
+        Case &quot;May&quot;
+            mthno = &quot;5&quot;
+        Case &quot;Jun&quot;
+            mthno = &quot;6&quot;
+        Case &quot;Jul&quot;
+            mthno = &quot;7&quot;
+        Case &quot;Aug&quot;
+            mthno = &quot;8&quot;
+        Case &quot;Sep&quot;
+            mthno = &quot;9&quot;
+        Case &quot;Oct&quot;
+            mthno = &quot;10&quot;
+        Case &quot;Nov&quot;
+            mthno = &quot;11&quot;
+        Case &quot;Dec&quot;
+            mthno = &quot;12&quot;
+        Case Else
+            mthno = &quot;Invalid Month&quot;
+    End Select
+    MonthNo = mthno
+End Function
+
+Function GetTotalFromtaskGrid101(strXMl, colname)
+    strXMl = Replace(strXMl, &quot;&amp;&quot;, &quot;&amp;amp;&quot;)
+    Set xmlDoc = CreateObject(&quot;Msxml2.DOMDocument&quot;)
+    xmlDoc.setProperty &quot;SelectionLanguage&quot;, &quot;XPath&quot;
+
+    Err.Clear
+    On Error Resume Next
+    xmlDoc.loadxml(strXMl)
+    If Err.Number &lt;&gt; 0 Then
+        &apos;Exit Function
+        NLSapp.MessageBox(Err.Description)
+    End If
+    On Error GoTo 0
+                
+    Set nodesList = xmlDoc.documentelement.selectNodes(&quot;/DATA/ROW&quot;) 
+    counter = nodesList.length
+
+    dblTotal = 0
+
+    For x = 1 To counter
+                                        
+        Set currNode=nodesList.nextNode 
+        CurrNodeName = currNode.nodename
+                                
+        Set cnode = currNode.childnodes
+                
+        For Each c In cnode
+
+            name = c.getAttribute(&quot;Name&quot;)
+            value = c.getAttribute(&quot;Value&quot;)
+
+            If name = colname Then
+                dblTotal = dblTotal + value
+            End If
+
+        Next
+    Next
+
+    GetTotalFromtaskGrid101 = dblTotal / 2 
+End Function
+
+Function GetmonthsFromtaskGrid101(strXMl)
+    strXMl = Replace(strXMl, &quot;&amp;&quot;, &quot;&amp;amp;&quot;)
+    Set xmlDoc = CreateObject(&quot;Msxml2.DOMDocument&quot;)
+    xmlDoc.setProperty &quot;SelectionLanguage&quot;, &quot;XPath&quot;
+
+    Err.Clear
+    On Error Resume Next
+    xmlDoc.loadxml(strXMl)
+    If Err.Number &lt;&gt; 0 Then
+        &apos;Exit Function
+        NLSapp.MessageBox(Err.Description)
+    End If
+    On Error GoTo 0
+                
+    Set nodesList = xmlDoc.documentelement.selectNodes(&quot;/DATA/ROW&quot;) 
+    counter = nodesList.length
+
+    GetmonthsFromtaskGrid101 = counter-1
+End Function
+
+Function getvalidabano(abaroutingno)
+    Do While Not abanumval = True
+        abanumx = Inputbox(&quot;Enter ABA/Routing Number&quot;, &quot;ABA/Routing Number&quot;, &quot;#########&quot;)
+        If abanumx = &quot;&quot; Then
+            NLSApp.MessageBox(&quot;Payment Aborted.&quot;)
+            Exit Function
+        End If
+        If IsNumeric(CStr(abanumx)) = False Then
+            MsgBox &quot;Amount must be Numeric. Please Re-enter.&quot;, , &quot;Invalid ABA/Routing Number&quot;
+        Else
+            abanumval = ValidateRoutingNumberDigits(CStr(abanumx))
+            If abanumval = &quot;&quot; Then
+                NLSApp.MessageBox(&quot;Routing Number must be 9 digits. Please Re-enter.&quot;)
+            End If
+            If abanumval = False Then
+                NLSApp.MessageBox(&quot;Invalid Routing Number. Please re-enter.&quot;)
+            End If
+
+        End If
+        getvalidabano = abanumx
+    Loop
+End Function
+
+Function getvalidacctno(abaroutingno)
+
+    Do While len(acctnumx) &lt; 6 Or len(acctnumx) &gt; 17 Or IsNumeric(CStr(acctnumx)) = False
+        acctnumx = Inputbox(&quot;Enter Account Number&quot;, &quot;Account Number&quot;, &quot;######&quot;)
+        If IsNumeric(CStr(acctnumx)) = False Then
+            MsgBox &quot;Accoun tNumber must be Numeric. Please Re-enter.&quot;, , &quot;Invalid Bank Account Number&quot;
+        Else
+            If len(acctnumx) &lt; 6 Then
+                NLSApp.MessageBox(&quot;Bank Account Number must be at least 6 digits. Please Re-enter.&quot;)
+            End If
+            If len(acctnumx) &gt; 17 Then
+                NLSApp.MessageBox(&quot;Bank Account Number must be at less than 17 digits. Please Re-enter.&quot;)
+            End If
+        End If
+    Loop
+    getvalidacctno = acctnumx
+
+End Function
+
+Function getvalidaccttype(typex)
+
+    Do While left(accttypex, 1) &lt;&gt; &quot;c&quot; And left(accttypex, 1) &lt;&gt; &quot;s&quot; And left(accttypex, 1) &lt;&gt; &quot;C&quot; And left(accttypex, 1) &lt;&gt; &quot;S&quot;
+        accttypex = Inputbox(&quot;Enter Account Type &quot; &amp; &quot;Valid options: CHECKING or SAVINGS&quot;, &quot;Account Type&quot;, &quot;CHECKING&quot;)
+        If left(accttypex, 1) &lt;&gt; &quot;c&quot; And left(accttypex, 1) &lt;&gt; &quot;s&quot; And left(accttypex, 1) &lt;&gt; &quot;C&quot; And left(accttypex, 1) &lt;&gt; &quot;S&quot; Then
+            NLSApp.MessageBox(&quot;Invalid Selection. Please check spelling and Re-enter.&quot;)
+        Else
+            If left(accttypex, 1) = &quot;C&quot; Or left(accttypex, 1) = &quot;c&quot;Then
+                &apos;MsgBox &quot;Checking Selected.&quot;, , &quot;Account Type&quot;
+                getvalidaccttype = &quot;CHECKING&quot;
+            End If
+            If left(accttypex, 1) = &quot;S&quot; Or left(accttypex, 1) = &quot;s&quot; Then
+                &apos;MsgBox &quot;Savings Selected.&quot;, , &quot;Account Type&quot;
+                getvalidaccttype = &quot;SAVINGS&quot;
+            End If
+        End If
+    Loop
+End Function
+
+&apos;ABA/Routing number check digit Function---------------------------------------------------------------
+Function ValidateRoutingNumberDigits(RoutingNumber) 
+&apos;    Electronic Funds Transfer Routing Number Check 
+	If len(RoutingNumber) &lt;&gt; 9 Then
+		ValidateRoutingNumberDigits = &quot;&quot;
+	Else
+		    Sum = 3 * CDbl(Mid(RoutingNumber, 1, 1)) + 7 *  CDbl(Mid(RoutingNumber, 2, 1)) +  CDbl(Mid(RoutingNumber, 3, 1)) + _
+          	3 *  CDbl(Mid(RoutingNumber, 4, 1)) + 7 *  CDbl(Mid(RoutingNumber, 5, 1)) +  CDbl(Mid(RoutingNumber, 6, 1)) + _
+          	3 *  CDbl(Mid(RoutingNumber, 7, 1)) + 7 *  CDbl(Mid(RoutingNumber, 8, 1)) + CDbl(Mid(RoutingNumber, 9, 1))
+    		ValidateRoutingNumberDigits = ((Sum Mod 10) = 0)
+    End if
+End Function
+
+&apos;Currency formating Function---------------------------------------------------------------
+Function Formatdec(dollaramount)
+
+    If left(right(round(CDbl(dollaramount), 2), 2), 1) = &quot;.&quot; Then
+        Formatdec = (CDbl(dollaramount) &amp; &quot;0&quot;)
+    Else
+        If left(right(round(CDbl(dollaramount), 2), 3), 1) = &quot;.&quot; Then
+            Formatdec = round(CDbl(dollaramount), 2)
+        Else
+            Formatdec = (CDbl(dollaramount) &amp; &quot;.00&quot;)
+        End If
+    End If
+End Function
+
+&apos;Numeric only validation Function---------------------------------------------------------------
+Function validamount(achamount)
+    validamount = 2
+    If achamount = &quot;&quot; Then
+        validamount = 0
+        MsgBox &quot;Amount Cannot be Blank. Please Re-enter.&quot;, , &quot;Invalid Amount&quot; 
+        Exit Function
+    End If
+
+    If CStr(achamount) = &quot;0&quot; Or CStr(achamount) = &quot;0.00&quot; Then
+        validamount = 0
+        MsgBox &quot;Amount Cannot be Zero. Please Re-enter.&quot;, , &quot;Invalid Amount&quot;
+        Exit Function
+    End If
+
+    If IsNumeric(CStr(achamount)) = False Then
+        validamount = 1
+        MsgBox &quot;Amount must be Numeric. Please Re-enter.&quot;, , &quot;Invalid Amount&quot;
+    End If
+
+
+End Function
+
+&apos;ACH Specific XML Import Function---------------------------------------------------------------
+Function ImportACHXML(xml)
+	NLSApp.ClearErrorString()
+
+	If Not NLSApp.ImportXMLRecord(xml) Then
+		If True Then
+		NLSApp.MessageBox(xml &amp; CHR(13) &amp; NLSApp.GetErrorString()&amp; CHR(13) &amp; CHR(13) &amp; &quot;Payment will be Aborted&quot;)
+
+		End If
+	ImportACHXML = NLSApp.GetErrorString() &amp; CHR(13) &amp; CHR(13) &amp; xml &amp; CHR(13)
+	Else
+               NLSApp.MessageBox(&quot;Payment Added&quot;)
+		ImportACHXML = &quot;&quot;
+	End If
+End Function
+
+
+Function DaysInMonth(monthno,yearno)
+
+     Select Case monthno
+	
+           Case 1, 3, 5, 7, 8, 10, 12
+              DaysInMonth = 31
+	     
+          Case 4, 6, 9, 11
+              DaysInMonth = 30  
+	     
+          Case 2
+              If yearno = 2020 Or yearno = 2024 Or yearno = 2028 Or yearno = 2032 Then 
+                 DaysInMonth = 29
+              Else
+                 DaysInMonth = 28
+              End If
+	   
+     End Select
+
+End Function
+
+&apos;=============================================================================
+
+Function buildrecurringTransFromtaskGrid(strXMl, loannumber, taskrefno, paydayvalue)
+
+    &apos;Builds XML that will create recurring transaction records that will schedule payment due billing
+    &apos;Loops through each node of grid to build a xml string that will be used for the import.
+    
+    rectransxml1 = &quot;&lt;NLS&gt;&lt;LOAN UpdateFlag=&quot;&quot;1&quot;&quot; LoanNumber=&quot;&quot;&quot; &amp; loannumber &amp; &quot;&quot;&quot; &gt;&quot; &amp; Chr(13)
+    rectransxml2 = &quot;&quot;
+    rectransxml3 = &quot;&lt;/LOAN&gt;&lt;/NLS&gt;&quot;
+    DebtSettlementBillingTC = &quot;8124&quot;
+    
+    strXMl = Replace(strXMl, &quot;&amp;&quot;, &quot;&amp;amp;&quot;)
+    Set xmlDoc = CreateObject(&quot;Msxml2.DOMDocument&quot;)
+    xmlDoc.setProperty &quot;SelectionLanguage&quot;, &quot;XPath&quot;
+
+    Err.Clear
+    On Error Resume Next
+    xmlDoc.loadxml(strXMl)
+    If Err.Number &lt;&gt; 0 Then
+       &apos;Exit Function
+       NLSapp.MessageBox(Err.Description)
+    End If
+    On Error GoTo 0
+                
+    Set nodesList = xmlDoc.documentelement.selectNodes(&quot;/DATA/ROW&quot;) 
+    counter = nodesList.length
+
+    count = 1
+
+    For x = 1 To counter
+                                        
+        Set currNode=nodesList.nextNode 
+        CurrNodeName = currNode.nodename
+                                
+        Set cnode = currNode.childnodes
+                
+        For Each c In cnode
+
+            name = c.getAttribute(&quot;Name&quot;)
+            value = c.getAttribute(&quot;Value&quot;)
+            
+            &apos;Set transaction date
+            If name = &quot;Month&quot; Then
+                If Not value = &quot;TOTAL&quot; Then
+                   &apos;Each billing transaction should be set 18 days prior to the payment due date.
+                   &apos;**The resulting trasactions will have transaction date and due date the same. A rule and a 
+                   &apos;**daily maintenance script will be used to set the transaction and resulting payment due record to 18 days after the 
+                   &apos;**billing transaction date.
+                    eventdate = (CDate(value) + paydayvalue) - 17
+                    &apos;msgbox(&quot;eventdate = (CDate(value) + paydayvalue) - 17 &quot; &amp; eventdate &amp; &quot; &quot; &amp; value &amp; &quot; &quot; &amp;  paydayvalue)
+                Else
+                   &apos;Final xml text to import all recurring billing transactions
+                    buildrecurringTransFromtaskGrid = rectransxml1 &amp; rectransxml2 &amp; rectransxml3
+                    Exit Function
+                End If
+            End If
+            
+            &apos;Set billing amount
+            If name = &quot;Amount&quot; Then
+                billamount = value
+                rectransxml2 = rectransxml2 &amp; &quot;&lt;LOANRECURRINGTRANSACTION Operation=&quot;&quot;ADD&quot;&quot; Description=&quot;&quot;Debt Settlment Billing Transactions&quot;&quot; EventType=&quot;&quot;0&quot;&quot; EventStartDate=&quot;&quot;&quot; &amp; _
+                eventdate &amp; &quot;&quot;&quot; TransactionType=&quot;&quot;0&quot;&quot; TransactionCode=&quot;&quot;&quot; &amp; DebtSettlementBillingTC &amp; &quot;&quot;&quot; AmountType=&quot;&quot;0&quot;&quot; OptionFlags=&quot;&quot;1&quot;&quot; Amount=&quot;&quot;&quot; &amp; billamount &amp; &quot;&quot;&quot;/&gt;&quot; &amp; Chr(13)
+
+            End If
+
+        Next
+    Next
+    
+&apos;EXAMPLE XML OUTPUT
+
+&apos;&lt;NLS&gt;
+&apos;  &lt;LOAN UpdateFlag=&quot;1&quot; LoanNumber=&quot;CP0025351&quot;&gt;
+&apos;   &lt;LOANRECURRINGTRANSACTION Operation=&quot;ADD&quot; Description=&quot;Debt Settlment Billing Transactions&quot; EventType=&quot;0&quot; EventStartDate=&quot;10/1/18&quot;  TransactionType=&quot;0&quot; TransactionCode=&quot;124&quot; AmountType=&quot;0&quot; Amount=&quot;1000&quot;/&gt;
+&apos;   &lt;LOANRECURRINGTRANSACTION Operation=&quot;ADD&quot; Description=&quot;Debt Settlment Billing Transactions&quot; EventType=&quot;0&quot; EventStartDate=&quot;11/1/18&quot;  TransactionType=&quot;0&quot; TransactionCode=&quot;124&quot; AmountType=&quot;0&quot; Amount=&quot;1000&quot;/&gt;
+&apos;   &lt;LOANRECURRINGTRANSACTION Operation=&quot;ADD&quot; Description=&quot;Debt Settlment Billing Transactions&quot; EventType=&quot;0&quot; EventStartDate=&quot;12/1/18&quot;  TransactionType=&quot;0&quot; TransactionCode=&quot;124&quot; AmountType=&quot;0&quot; Amount=&quot;1000&quot;/&gt;
+&apos;  &lt;/LOAN&gt;
+&apos;&lt;/NLS&gt;
+End Function  
+
+Function DateForm111(sourcedate)
+
+	If len(DAY(sourcedate)) = 1 Then
+	   daytext = &quot;0&quot; &amp; DAY(sourcedate) 
+	Else 
+	   daytext = DAY(sourcedate) 
+	End if 
+	
+	If len(MONTH(sourcedate)) = 1 Then
+	   mnthtext = &quot;0&quot; &amp; MONTH(sourcedate) 
+	Else 
+	   mnthtext = MONTH(sourcedate) 
+	End if 
+	
+	DateForm111 = YEAR(sourcedate)&amp;&quot;/&quot;&amp; mnthtext &amp;&quot;/&quot;&amp; daytext
+	
+End Function
+
+&apos;AUTOCURE------------------------------------------------------------------------------------------------------
+&apos;Function used to &quot;auto-cure&quot; debt settlement loans prior to setting them to ACTIVE SETTLEMNT staus.
+&apos;&quot;Cure&quot; means to bring the past due loan to a current state by reversing all billing transactions to show the loan as having no past due payments.
+
+Function autocure(refno)
+ 
+	paymentsduesql = &quot;Select distinct &apos;&lt;TRANSACTIONCODE TransactionCode=&quot;&quot;&apos; + convert(varchar(8),convert(int,lth.transaction_code)+1) +&apos;&quot;&quot; EffectiveDate=&quot;&quot;&apos; + convert(char(10),getdate(),101) &quot; &amp; chr(13) &amp; _
+		&quot;+ &apos;&quot;&quot; LoanNumber=&quot;&quot;&apos; + l.loan_number + &apos;&quot;&quot; Amount=&quot;&quot;&apos; + convert(varchar(10),lpd.payment_remaining) + &apos;&quot;&quot; DateDue=&quot;&quot;&apos; + convert(char(10),lth.date_due, 101) &quot; &amp; chr(13) &amp; _
+		&quot;+ &apos;&quot;&quot; TransactionDate=&quot;&quot;&apos; + convert(char(10),lth.transaction_date,101) + &apos;&quot;&quot; TransRefNo=&quot;&quot;&apos; + convert(varchar(12),lth.transrefno) &quot; &amp; chr(13) &amp; _
+		&quot;+ &apos;&quot;&quot; UserDefined1=&quot;&quot;Debt Settlement Curing&quot;&quot;/&gt;&apos; &quot; &amp; chr(13) &amp; _
+		&quot;from loanacct_trans_history lth,loanacct_payments_due lpd, loanacct l &quot; &amp; chr(13) &amp; _
+		&quot;where lth.acctrefno = lpd.acctrefno &quot; &amp; chr(13) &amp; _
+		&quot;and l.acctrefno = lpd.acctrefno &quot; &amp; chr(13) &amp; _
+		&quot;and lpd.payment_reference_no = lth.transaction_reference_no /* This is how payments tables are linked to the transaction table*/&quot; &amp; chr(13) &amp;_
+		&quot;and lpd.acctrefno = &quot; &amp; refno &amp; chr(13) &amp; _
+		&quot;and lth.transaction_code IN (&apos;120&apos;,&apos;122&apos;,&apos;124&apos;,&apos;126&apos;,&apos;150&apos;,&apos;180&apos;,&apos;320&apos;,&apos;500&apos;,&apos;504&apos;)&quot;
+
+	currenttransactionXML = NLSApp.SQLSelectStatement(paymentsduesql)
+	curecount = 0
+	If Not currenttransactionXML = &quot;&quot; Then	
+		
+		Do 	Until currenttransactionXML = &quot;***END OF RESULT***&quot;
+
+			alltransactionsXML = alltransactionsXML &amp; chr(13) &amp; currenttransactionXML
+			curecount = curecount + 1
+			currenttransactionXML = NLSApp.SQLSelectStatementReadNext()
+			
+		Loop
+		
+		&apos;Sample Reveral XML String output
+		&apos;&lt;TRANSACTIONCODE TransactionCode=&quot;&quot;125&quot;&quot; EffectiveDate=&quot;&quot;03/26/2018&quot;&quot; LoanNumber=&quot;&quot;APP-00709721&quot;&quot; Amount=&quot;&quot;534.90&quot;&quot; DateDue=&quot;&quot;01/23/2018&quot;&quot; TransactionDate=&quot;&quot;01/05/2018&quot;&quot; TransRefNo=&quot;&quot;4969198&quot;&quot; UserDefined1=&quot;&quot;Debt Settlement Curing&quot;&quot;/&gt;
+		&apos;&lt;TRANSACTIONCODE TransactionCode=&quot;&quot;125&quot;&quot; EffectiveDate=&quot;&quot;03/26/2018&quot;&quot; LoanNumber=&quot;&quot;APP-00709721&quot;&quot; Amount=&quot;&quot;534.90&quot;&quot; DateDue=&quot;&quot;02/23/2018&quot;&quot; TransactionDate=&quot;&quot;02/05/2018&quot;&quot; TransRefNo=&quot;&quot;5083089&quot;&quot; UserDefined1=&quot;&quot;Debt Settlement Curing&quot;&quot;/&gt;
+		&apos;&lt;TRANSACTIONCODE TransactionCode=&quot;&quot;125&quot;&quot; EffectiveDate=&quot;&quot;03/26/2018&quot;&quot; LoanNumber=&quot;&quot;APP-00709721&quot;&quot; Amount=&quot;&quot;534.90&quot;&quot; DateDue=&quot;&quot;03/23/2018&quot;&quot; TransactionDate=&quot;&quot;03/05/2018&quot;&quot; TransRefNo=&quot;&quot;5192819&quot;&quot; UserDefined1=&quot;&quot;Debt Settlement Curing&quot;&quot;/&gt;
+		
+		
+		If ImportXML(&quot;&lt;NLS&gt;&lt;TRANSACTIONS&gt;&quot; &amp; chr(13) &amp; alltransactionsXML &amp; chr(13) &amp; &quot;&lt;/TRANSACTIONS&gt;&lt;/NLS&gt;&quot;) = &quot;&quot; Then
+			NLSApp.MessageBox(&quot;Autocure Completed. &quot; &amp; curecount &amp; &quot; payments or fees due were removed.&quot;)
+			autocure = 1
+		Else
+			NLSApp.MessageBox(&quot;Autocure Failure.&quot;)
+			autocure = -1
+		End If
+
+	Else
+		NLSApp.MessageBox(&quot;There were no payments or fees found to remove. Autocure Completed.&quot;)
+		autocure = 1
+	End If
+	
+End Function
+
+
+Function DateFormat(datestring,formatcode)
+
+	If IsDate(datestring) = true Then
+		If len(DAY(datestring)) = 1 Then
+		   daytext = &quot;0&quot; &amp; DAY(datestring) 
+		Else 
+		   daytext = DAY(datestring) 
+		End if 
+
+		If len(MONTH(datestring)) = 1 Then
+		   mnthtext = &quot;0&quot; &amp; MONTH(datestring) 
+		Else 
+		   mnthtext = MONTH(datestring) 
+		End if 
+
+		Select case formatcode
+		&apos;U.S. = mm/dd/yyyy
+		case 1	
+			DateFormat = mnthtext &amp;&quot;/&quot;&amp; daytext &amp;&quot;/&quot;&amp; Right(YEAR(datestring),2)
+
+		case 101	
+			DateFormat = mnthtext &amp;&quot;/&quot;&amp; daytext &amp;&quot;/&quot;&amp;	YEAR(datestring) 
+
+		&apos;JAPAN	= yyyy/mm/dd	
+		case 11	
+			DateFormat = Right(YEAR(datestring),2) &amp;&quot;/&quot;&amp; mnthtext &amp;&quot;/&quot;&amp; daytext
+		case 111	
+			DateFormat = YEAR(datestring)&amp;&quot;/&quot;&amp; mnthtext &amp;&quot;/&quot;&amp; daytext
+
+		&apos;Default with Day and timestamp removed	= mon yyyy	
+		case 10077	
+			DateFormat =  MonthName(Month(datestring), False) &amp; &quot; &quot; &amp; YEAR(datestring)
+			
+
+		Case Else
+
+			DateFormat = -1
+
+		End Select
+
+	Else	
+
+		DateFormat = -1
+
+	End if
+
+	
+
+End Function**###Local Functions###**"/>
+</TASK_PORTFOLIO_CODE>
+</SETUP>
